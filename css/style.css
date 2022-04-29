@@ -160,6 +160,10 @@ body {
   width: 50%;
 }
 
+.header_sp_menu_btn.active span {
+  background: #ffffff
+}
+
 .header_sp_menu_btn span:nth-of-type(1) {
   top: 13px;
 }
