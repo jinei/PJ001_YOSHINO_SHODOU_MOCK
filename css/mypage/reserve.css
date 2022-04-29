@@ -55,6 +55,7 @@ th p:nth-of-type(2) {
 
 td {
   height: 80px;
+  background-color: #ffffff;
 }
 
 th,
