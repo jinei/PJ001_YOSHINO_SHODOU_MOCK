@@ -1,0 +1,81 @@
+.content_wrap {
+  width: 800px;
+}
+
+table {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+th,
+td {
+  height: 64px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th,
+td {
+  border-top: 1px solid #CFCFCF;
+  border-bottom: 1px solid #CFCFCF;
+}
+
+th:first-child,
+td:first-child {
+  border-left: 1px solid #CFCFCF;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 1px solid #CFCFCF;
+}
+
+td.zoom_link {
+  color: #5095E7;
+}
+
+td .cancel_btn {
+  width: 85%;
+  height: 70%;
+  border-radius: 3px;
+  background-color: #AA3939;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.pagination li:not(li:first-child) {
+  margin-left: .5rem;
+}
+
+.pagination li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #3E1300;
+  border: 1px solid #CFCFCF;
+  cursor: pointer;
+}
+
+.pagination li a,
+.pagination li i {
+  font-size: 1.6rem;
+}
+
+.pagination li.active,
+.pagination li:hover,
+.pagination li:hover a,
+.pagination li:hover i {
+  background-color: #3E1300;
+  color: #ffffff;
+}

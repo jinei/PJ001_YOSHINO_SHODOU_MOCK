@@ -98,3 +98,12 @@ body {
   font-weight: 700;
   color: #ffffff;
 }
+
+.content_sub_title {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.content_wrap {
+  margin: 5rem auto;
+}
