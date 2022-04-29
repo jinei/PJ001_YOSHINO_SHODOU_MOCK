@@ -109,3 +109,139 @@ body {
     opacity: 0;
   }
 }
+
+.header_sp {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  background: #FFFFFF;
+}
+
+.header_sp_logo_wrap {
+  margin-left: 1rem;
+  height: 100%;
+}
+
+.header_sp_logo {
+  height: 100%;
+}
+
+.header_sp_menu {
+  margin-right: .75rem;
+}
+
+.header_sp_menu_btn {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.header_sp_menu_btn span {
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 2px;
+  border-radius: 5px;
+  background: #333;
+  width: 50%;
+}
+
+
+.header_sp_menu_btn span:nth-of-type(1) {
+  top: 13px;
+}
+
+.header_sp_menu_btn span:nth-of-type(2) {
+  top: 21px;
+}
+
+.header_sp_menu_btn span:nth-of-type(3) {
+  top: 29px;
+}
+
+.header_sp_menu_btn span:nth-of-type(3)::after {
+  content: "Menu";
+  position: absolute;
+  top: 1rem;
+  left: -.65rem;
+  color: #333;
+  font-size: .8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-family: 'Bitter',
+    serif;
+}
+
+.header_sp_menu_btn.active span:nth-of-type(1) {
+  top: 14px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+
+.header_sp_menu_btn.active span:nth-of-type(2) {
+  opacity: 0;
+}
+
+.header_sp_menu_btn.active span:nth-of-type(3) {
+  top: 26px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+
+.header_sp_menu_btn.active span:nth-of-type(3)::after {
+  content: "";
+  transform: translateY(0) rotate(-45deg);
+  top: 1rem;
+  left: -.65rem;
+}
+
+/* タブレット（全般） */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .header_box {
+    width: 95%;
+    height: 104px;
+  }
+
+  .header_inner {
+    width: 90%;
+  }
+
+  .header_inner li a {
+    font-size: 1.2rem;
+  }
+}
+
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {
+  .header_pc {
+    display: none;
+  }
+
+  .header_sp {
+    display: flex;
+  }
+}
+
+/* sp全般 */
+@media screen and (max-width: 600px) {
+  .header_pc {
+    display: none;
+  }
+
+  .header_sp {
+    display: flex;
+  }
+}
+
+/* sp（iPhone SE） */
+@media screen and (width: 320px) {}
