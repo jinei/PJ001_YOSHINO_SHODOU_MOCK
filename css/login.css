@@ -74,3 +74,34 @@
   font-size: 1.6rem;
   color: #5095E7;
 }
+
+/* タブレット（全般） */
+@media screen and (min-width: 600px) and (max-width: 1024px) {}
+
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {}
+
+/* sp全般 */
+@media screen and (max-width: 600px) {
+  .login_form_wrap {
+    top: 20vh;
+    width: 90%;
+    height: 70vh;
+  }
+
+  .login_form_inner {
+    width: 80%;
+  }
+
+  .login_form_input_wrap label,
+  .reissue_link {
+    font-size: 1.4rem;
+  }
+
+  .login_btn_wrap {
+    margin-top: 2rem;
+  }
+}
+
+/* sp（iPhone SE） */
+@media screen and (width: 320px) {}
