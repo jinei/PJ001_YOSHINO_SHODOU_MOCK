@@ -39,6 +39,11 @@ td.zoom_link {
   color: #5095E7;
 }
 
+td.canceled {
+  color: #AA3939;
+  font-weight: 900;
+}
+
 td .cancel_btn {
   width: 85%;
   height: 70%;
@@ -46,6 +51,18 @@ td .cancel_btn {
   background-color: #AA3939;
   color: #ffffff;
   font-size: 1.4rem;
+}
+
+td .cancel_date {
+  width: 85%;
+  margin: auto;
+  text-align: left;
+  color: #AA3939;
+}
+
+td .cancel_date p {
+  font-size: 1rem;
+  font-weight: 900;
 }
 
 .pagination {
