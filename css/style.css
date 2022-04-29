@@ -133,6 +133,7 @@ body {
 }
 
 .header_sp_menu {
+  display: none;
   position: fixed;
   margin-right: .75rem;
   z-index: 3;
@@ -274,6 +275,10 @@ body {
   .header_sp {
     display: flex;
   }
+
+  .header_sp_menu {
+    display: block;
+  }
 }
 
 /* sp全般 */
@@ -284,6 +289,10 @@ body {
 
   .header_sp {
     display: flex;
+  }
+
+  .header_sp_menu {
+    display: block;
   }
 }
 
