@@ -1,0 +1,52 @@
+body {
+  font-family: 'Noto Sans JP',
+    sans-serif;
+}
+
+.mypage_header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem auto;
+  width: 95%;
+  height: 112px;
+}
+
+.mypage_header_logo_wrap {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.mypage_header_logo_wrap img {
+  height: 100%;
+}
+
+.mypage_header_title {
+  margin-left: 2rem;
+}
+
+.mypage_header_title h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.mypage_header_title h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-top: .5rem;
+}
+
+.mypage_header_account {
+  display: flex;
+  height: 100%;
+}
+
+.mypage_header_account a,
+.mypage_header_account p {
+  font-size: 1.6rem;
+}
+
+.mypage_header_account p {
+  margin-right: 2rem;
+}
