@@ -50,3 +50,51 @@ body {
 .mypage_header_account p {
   margin-right: 2rem;
 }
+
+.contents_link_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+}
+
+.contents_link_wrap li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  width: 25%;
+}
+
+.contents_link_wrap li a {
+  font-size: 1.4rem;
+}
+
+.contents_link_wrap li.active a {
+  font-weight: 900;
+}
+
+.contents_link_wrap li.active::after {
+  content: '';
+  position: absolute;
+  left: 15%;
+  bottom: -1.2rem;
+  width: 70%;
+  height: 3px;
+  margin: auto;
+  background-color: #333333;
+}
+
+.content_title_wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  width: 100%;
+  height: 64px;
+  background-color: #3E1300;
+}
+
+.content_title_wrap h3 {
+  margin-left: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
