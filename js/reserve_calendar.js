@@ -18,8 +18,11 @@ $('.prev_month').on('click', function () {
   renderCalendar(showDate);
 });
 
-// パラメータで指定された日付から一週間分の日付データを取得、表示する関数
-// param dateObj:Date型
+/**
+ * パラメータで指定された日付から一週間分の日付データを取得、表示する関数
+ *
+ * @param  dateObj {Date型} 取得対象の日付
+ */
 const renderCalendar = (dateObj) => {
 
   // カレンダー上部の年月更新
@@ -42,10 +45,3 @@ const renderCalendar = (dateObj) => {
     console.log(targetCalendarCell)
   }
 }
-
-$('.reserve_symbol.available').on('click', function () {
-  $("#reserveModal").modal({
-    fadeDuration: 200,
-    showClose: false
-  });
-})

@@ -55,3 +55,10 @@
   background-color: #D7D9D7;
   color: #333333;
 }
+
+/* sp全般 */
+@media screen and (max-width: 600px) {
+  .modal {
+    width: 90%;
+  }
+}

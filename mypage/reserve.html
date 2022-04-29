@@ -75,6 +75,18 @@
         <!-- レッスン予約 -->
         <section>
             <div class="content_wrap">
+                <div class="success_alert">
+                    <div class="alert_inner">
+                        <div class="alert_left">
+                            <i class="fas fa-check-circle"></i>
+                            <p>レッスン予約が完了しました。</p>
+                        </div>
+                        <div class="alert_right">
+                            <i class="fas fa-times alert_delete"></i>
+                        </div>
+                    </div>
+                </div>
+
                 <h4 class="content_sub_title">
                     予約空き状況
                 </h4>
@@ -401,7 +413,7 @@
                         2022年4月19(火）9:00 ~ 10:00
                     </div>
                     <div class="modal_footer">
-                        <button class="modal_btn modal_success_btn">予約確定</button>
+                        <a href="reserve.html?reserveComplete=true" class="modal_btn modal_success_btn">予約確定</a>
                         <a href="#" class="modal_btn modal_cancel_btn" rel="modal:close">キャンセル</a>
                     </div>
                 </div>
@@ -417,6 +429,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
     <script src="../js/script.js"></script>
+    <script src="../js/mypage.js"></script>
     <script src="../js/reserve_calendar.js"></script>
 </body>
 
