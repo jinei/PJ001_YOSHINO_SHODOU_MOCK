@@ -111,8 +111,8 @@ body {
 
 .success_alert {
   display: none;
-  margin-bottom: 5rem;
-  width: 100%;
+  margin: 5rem auto 5rem auto;
+  width: 888px;
   height: 100px;
   background-color: #56CE94;
   color: #ffffff;
@@ -237,7 +237,7 @@ body {
   }
 
   .success_alert {
-    margin: 0 auto 2.5rem auto;
+    margin: 2.5rem auto 2.5rem auto;
     width: 95%;
     height: 7rem;
   }

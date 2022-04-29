@@ -14,12 +14,17 @@ const getParam = (name) => {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-
-const successAlertFlag = getParam('reserveComplete');
-if (successAlertFlag) {
+// 予約完了アラート表示
+const reserveSuccessAlertFlag = getParam('reserveComplete');
+if (reserveSuccessAlertFlag) {
   $('.success_alert').addClass('active');
 }
 
+// 会員編集完了アラート表示
+const editSuccessAlertFlag = getParam('editComplete');
+if (editSuccessAlertFlag) {
+  $('.success_alert').addClass('active');
+}
 
 // 予約確認モーダル
 $('.reserve_symbol.available').on('click', function () {

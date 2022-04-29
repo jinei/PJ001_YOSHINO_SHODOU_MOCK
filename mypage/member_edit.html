@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mypage/mypage.css">
-    <link rel="stylesheet" href="../css/mypage/member_detail.css">
+    <link rel="stylesheet" href="../css/mypage/member_edit.css">
 </head>
 
 <body>
@@ -71,38 +71,39 @@
 
         <!-- 会員情報詳細 -->
         <section>
-            <div class="success_alert">
-                <div class="alert_inner">
-                    <div class="alert_left">
-                        <i class="fas fa-check-circle"></i>
-                        <p>会員情報の更新が完了しました。</p>
-                    </div>
-                    <div class="alert_right">
-                        <i class="fas fa-times alert_delete"></i>
-                    </div>
-                </div>
-            </div>
             <div class="content_wrap">
                 <h4 class="content_sub_title">
-                    会員情報詳細
+                    会員情報入力
                 </h4>
-                <table>
-                    <tr>
-                        <th>お名前</th>
-                        <td>山田 太郎</td>
-                    </tr>
-                    <tr>
-                        <th>お名前 （カナ）</th>
-                        <td>ヤマダ タロウ</td>
-                    </tr>
-                    <tr>
-                        <th>メールアドレス</th>
-                        <td>aaa@aaa.com</td>
-                    </tr>
-                </table>
-                <div class="common_btn_wrap">
-                    <a href="member_edit.html" class="common_btn edit_btn">編集する</a>
-                </div>
+                <form action="">
+                    <div class="member_edit_form_wrap">
+                        <div class="member_edit_form_inner">
+                            <div class="member_form_body">
+                                <div class="member_edit_form_input_element half">
+                                    <label for="name" class="required">お名前</label>
+                                    <div class="member_edit_form_input_wrap">
+                                        <input type="text" name="name" id="name" value="山田">
+                                        <input type="text" name="name" id="name" value="太郎">
+                                    </div>
+                                </div>
+                                <div class="member_edit_form_input_element half">
+                                    <label for="name" class="required">お名前（カナ）</label>
+                                    <div class="member_edit_form_input_wrap">
+                                        <input type="text" name="name" id="name" value="ヤマダ">
+                                        <input type="text" name="name" id="name" value="タロウ">
+                                    </div>
+                                </div>
+                                <div class="member_edit_form_input_element">
+                                    <label for="email" class="required">メールアドレス</label>
+                                    <input type="text" name="email" id="email" value="aaa@aaa.com">
+                                </div>
+                                <div class="common_btn_wrap">
+                                    <a href="member_detail.html?editComplete=true" class="common_btn edit_btn">登録</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
 
         </section>
@@ -113,7 +114,6 @@
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
         </script>
     <script src="../js/script.js"></script>
-    <script src="../js/mypage.js"></script>
 </body>
 
 </html>
