@@ -10,6 +10,7 @@ body {
   margin: 2.5rem auto;
   width: 95%;
   height: 112px;
+  z-index: 9;
 }
 
 .mypage_header_logo_wrap {
@@ -107,3 +108,69 @@ body {
 .content_wrap {
   margin: 5rem auto;
 }
+
+/* タブレット（全般） */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .content_wrap {
+    width: 95%;
+  }
+}
+
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {}
+
+/* sp全般 */
+@media screen and (max-width: 600px) {
+  .mypage_header_wrap {
+    position: fixed;
+    margin: auto;
+    width: 100%;
+    height: 8vh;
+    background-color: #ffffff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .mypage_header_title h1 {
+    display: none;
+  }
+
+  .mypage_header_title h2 {
+    font-size: 1.2rem;
+  }
+
+  .mypage_header_account {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .mypage_header_account p {
+    margin-right: inherit;
+  }
+
+  .mypage_header_account a,
+  .mypage_header_account p {
+    font-size: 1rem;
+  }
+
+  .contents_link_wrap {
+    width: 90%;
+    padding-top: 15vh;
+  }
+
+  .contents_link_wrap li a {
+    font-size: 1.2rem;
+  }
+
+  .content_title_wrap h3 {
+    margin-left: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .content_sub_title {
+    font-size: 1.6rem;
+  }
+}
+
+/* sp（iPhone SE） */
+@media screen and (width: 320px) {}

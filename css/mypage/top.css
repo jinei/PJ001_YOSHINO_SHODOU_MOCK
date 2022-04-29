@@ -15,6 +15,8 @@ td {
   font-weight: 500;
   text-align: center;
   vertical-align: middle;
+  width: 20%;
+  word-break: break-all;
 }
 
 th,
@@ -79,3 +81,37 @@ td .cancel_btn {
   background-color: #3E1300;
   color: #ffffff;
 }
+
+/* タブレット（全般） */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .content_wrap {
+    width: 95%;
+  }
+}
+
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {}
+
+/* sp全般 */
+@media screen and (max-width: 600px) {
+  .content_sub_title {
+    margin-left: 1rem;
+  }
+
+  .content_wrap {
+    width: 100%;
+  }
+
+  th,
+  td {
+    font-size: 1.2rem;
+  }
+
+  td .cancel_btn {
+    height: 55%;
+    font-size: 1rem;
+  }
+}
+
+/* sp（iPhone SE） */
+@media screen and (width: 320px) {}
