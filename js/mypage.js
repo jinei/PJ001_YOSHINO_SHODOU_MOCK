@@ -26,9 +26,23 @@ if (editSuccessAlertFlag) {
   $('.success_alert').addClass('active');
 }
 
+// パスワード更新完了アラート表示
+const passwordUpdateSuccessAlertFlag = getParam('passwordUpdateComplete');
+if (passwordUpdateSuccessAlertFlag) {
+  $('.success_alert').addClass('active');
+}
+
 // 予約確認モーダル
 $('.reserve_symbol.available').on('click', function () {
   $("#reserveModal").modal({
+    fadeDuration: 200,
+    showClose: false
+  });
+})
+
+// 予約確認モーダル
+$('#password_update_btn').on('click', function () {
+  $("#passwordUpdateModal").modal({
     fadeDuration: 200,
     showClose: false
   });
