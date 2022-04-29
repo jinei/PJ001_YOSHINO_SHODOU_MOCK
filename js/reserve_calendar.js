@@ -42,3 +42,10 @@ const renderCalendar = (dateObj) => {
     console.log(targetCalendarCell)
   }
 }
+
+$('.reserve_symbol.available').on('click', function () {
+  $("#reserveModal").modal({
+    fadeDuration: 200,
+    showClose: false
+  });
+})

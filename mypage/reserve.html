@@ -19,10 +19,13 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c013a0f8b7.js" crossorigin="anonymous"></script>
 
+    <!-- Modal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
     <!-- css -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mypage/modal.css">
     <link rel="stylesheet" href="../css/mypage/mypage.css">
     <link rel="stylesheet" href="../css/mypage/reserve.css">
 </head>
@@ -387,6 +390,22 @@
                     </tr>
                 </table>
             </div>
+
+            <!-- 予約確認モーダル -->
+            <div id="reserveModal" class="modal">
+                <div class="modal_inner">
+                    <div class="modal_header">
+                        以下の内容で予約しますか？
+                    </div>
+                    <div class="modal_body">
+                        2022年4月19(火）9:00 ~ 10:00
+                    </div>
+                    <div class="modal_footer">
+                        <button class="modal_btn modal_success_btn">予約確定</button>
+                        <a href="#" class="modal_btn modal_cancel_btn" rel="modal:close">キャンセル</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -394,6 +413,9 @@
     <script src=" https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
         </script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
     <script src="../js/script.js"></script>
     <script src="../js/reserve_calendar.js"></script>
 </body>

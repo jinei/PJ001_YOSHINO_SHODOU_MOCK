@@ -75,11 +75,11 @@ td.time p {
 td.reserve_symbol p {
   font-size: 3.2rem;
   font-weight: 900;
-  cursor: pointer;
 }
 
 td.reserve_symbol.available p {
   color: #18B50B;
+  cursor: pointer;
 }
 
 td.reserve_symbol.not_available p {
