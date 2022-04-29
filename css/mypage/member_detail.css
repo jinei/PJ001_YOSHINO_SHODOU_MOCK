@@ -1,0 +1,61 @@
+.content_wrap {
+  width: 400px;
+}
+
+table {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+th,
+td {
+  padding-left: 2rem;
+  height: 48px;
+  vertical-align: middle;
+  word-break: break-all;
+  border: 1px solid #CBC1C1;
+  font-size: 1.6rem;
+}
+
+th {
+  width: 40%;
+  background-color: #3E1300;
+  color: #ffffff;
+}
+
+td {
+  width: 60%;
+  background-color: #FFFFFF;
+  color: #333333;
+}
+
+/* タブレット（全般） */
+@media screen and (min-width: 600px) and (max-width: 1024px) {}
+
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {}
+
+/* sp全般 */
+@media screen and (max-width: 600px) {
+  .content_wrap {
+    width: 100%;
+  }
+
+  .content_sub_title {
+    margin-left: 1rem;
+  }
+
+  table {
+    margin: 4rem auto 0 auto;
+    width: 80%;
+  }
+
+  th,
+  td {
+    height: 4rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* sp（iPhone SE） */
+@media screen and (width: 320px) {}
