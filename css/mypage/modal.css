@@ -51,6 +51,11 @@
   color: #ffffff;
 }
 
+.modal_danger_btn {
+  background-color: #AA3939;
+  color: #ffffff;
+}
+
 .modal_cancel_btn {
   background-color: #D7D9D7;
   color: #333333;

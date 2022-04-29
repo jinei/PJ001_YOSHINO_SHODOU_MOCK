@@ -14,6 +14,12 @@ const getParam = (name) => {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
+// 予約キャンセルアラート表示
+const reserveCancelSuccessAlertFlag = getParam('reserveCancelComplete');
+if (reserveCancelSuccessAlertFlag) {
+  $('.success_alert').addClass('active');
+}
+
 // 予約完了アラート表示
 const reserveSuccessAlertFlag = getParam('reserveComplete');
 if (reserveSuccessAlertFlag) {
@@ -31,6 +37,14 @@ const passwordUpdateSuccessAlertFlag = getParam('passwordUpdateComplete');
 if (passwordUpdateSuccessAlertFlag) {
   $('.success_alert').addClass('active');
 }
+
+// 予約キャンセルモーダル
+$('.cancel_btn').on('click', function () {
+  $("#reserveCancelModal").modal({
+    fadeDuration: 200,
+    showClose: false
+  });
+});
 
 // 予約確認モーダル
 $('.reserve_symbol.available').on('click', function () {
