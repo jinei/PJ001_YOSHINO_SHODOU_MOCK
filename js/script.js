@@ -6,3 +6,5 @@ $(".header_sp_menu_btn").click(function () {
   $(this).toggleClass('active');
   $('.sp_menu').fadeToggle();
 });
+
+$('#datepicker').datepicker();
