@@ -1,0 +1,208 @@
+.content_wrap {
+  width: 800px;
+}
+
+.condition_wrap {
+  margin: auto;
+  padding: 24px 0 48px 0;
+  width: 100%;
+  background: #EFEEEE;
+  border: 1px solid #CFCFCF;
+}
+
+.condition_inner {
+  margin: auto;
+  width: 90%;
+}
+
+.condition_inner h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.condition_elem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 3rem;
+  width: 60%;
+}
+
+.condition_elem label {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.condition_elem input,
+.condition_elem select {
+  height: 40px;
+  border-radius: 1px;
+  background: #FFFFFF;
+  border: 1px solid #D5D5D5;
+  font-size: 1.6rem;
+  padding-left: 1rem;
+}
+
+.condition_elem input,
+.condition_elem .select_wrap {
+  width: 280px;
+}
+
+.condition_elem select {
+  width: 50%;
+  margin-left: 40px;
+}
+
+.select_wrap i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #D4D4D4;
+  font-size: 2rem;
+  border: 1px solid #D5D5D5;
+}
+
+table {
+  margin-top: 2rem;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+th {
+  background-color: #E3E3E3;
+}
+
+th,
+td {
+  height: 64px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  width: 20%;
+  word-break: break-all;
+}
+
+th,
+td {
+  border-top: 1px solid #CFCFCF;
+  border-bottom: 1px solid #CFCFCF;
+}
+
+th:first-child,
+td:first-child {
+  border-left: 1px solid #CFCFCF;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 1px solid #CFCFCF;
+}
+
+td .cancel_date p {
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+td .recovery_btn,
+td .stop_btn {
+  width: 85%;
+  height: 70%;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+td .recovery_btn {
+  background-color: #2591A9;
+}
+
+td .stop_btn {
+  background-color: #A92D25;
+}
+
+.pagination {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.pagination li:not(li:first-child) {
+  margin-left: .5rem;
+}
+
+.pagination li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  color: #3E1300;
+  border: 1px solid #CFCFCF;
+  cursor: pointer;
+}
+
+.pagination li a,
+.pagination li i {
+  font-size: 1.6rem;
+}
+
+.pagination li.active,
+.pagination li:hover,
+.pagination li:hover a,
+.pagination li:hover i {
+  background-color: #3E1300;
+  color: #ffffff;
+}
+
+/* タブレット（全般） */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .content_wrap {
+    width: 95%;
+  }
+}
+
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {}
+
+/* sp全般 */
+@media screen and (max-width: 600px) {
+  .content_sub_title {
+    margin-left: 1rem;
+  }
+
+  .content_wrap {
+    width: 100%;
+  }
+
+  .condition_elem {
+    width: 90%;
+  }
+
+  .condition_elem label {
+    font-size: 1.2rem;
+  }
+
+  .condition_elem input,
+  .condition_elem .select_wrap {
+    width: 70%;
+  }
+
+  th,
+  td {
+    font-size: 1.2rem;
+  }
+
+  td .cancel_btn {
+    height: 55%;
+    font-size: 1rem;
+  }
+}
+
+/* sp（iPhone SE） */
+@media screen and (width: 320px) {}

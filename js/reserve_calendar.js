@@ -42,6 +42,5 @@ const renderCalendar = (dateObj) => {
     const targetCalendarCell = $('#daysRow').find('.date')[i];
     $(targetCalendarCell).find('.day').text(day);
     $(targetCalendarCell).find('.weekday').text('(' + weekDayText[weekDay] + ')');
-    console.log(targetCalendarCell)
   }
 }
