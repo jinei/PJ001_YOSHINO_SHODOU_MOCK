@@ -77,6 +77,17 @@
 
         <!-- レッスン予約 -->
         <section>
+            <div class="success_alert">
+                <div class="alert_inner">
+                    <div class="alert_left">
+                        <i class="fas fa-check-circle"></i>
+                        <p>予約の更新が完了しました。</p>
+                    </div>
+                    <div class="alert_right">
+                        <i class="fas fa-times alert_delete"></i>
+                    </div>
+                </div>
+            </div>
             <div class="content_wrap">
                 <h4 class="content_sub_title">
                     予約追加
@@ -104,7 +115,7 @@
                                     </div>
                                 </div>
                                 <div class="common_btn_wrap">
-                                    <a id="password_update_btn" class="common_btn edit_btn">登録</a>
+                                    <a href="reserve.html?editComplete=true" class="common_btn edit_btn">登録</a>
                                 </div>
                             </div>
                         </div>
@@ -124,6 +135,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     <script src="../js/script.js"></script>
+    <script src="../js/mypage.js"></script>
 </body>
 
 </html>

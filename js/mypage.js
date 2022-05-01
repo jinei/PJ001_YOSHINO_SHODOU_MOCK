@@ -14,27 +14,9 @@ const getParam = (name) => {
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-// 予約キャンセルアラート表示
-const reserveCancelSuccessAlertFlag = getParam('reserveCancelComplete');
-if (reserveCancelSuccessAlertFlag) {
-  $('.success_alert').addClass('active');
-}
-
-// 予約完了アラート表示
-const reserveSuccessAlertFlag = getParam('reserveComplete');
-if (reserveSuccessAlertFlag) {
-  $('.success_alert').addClass('active');
-}
-
 // 会員編集完了アラート表示
 const editSuccessAlertFlag = getParam('editComplete');
 if (editSuccessAlertFlag) {
-  $('.success_alert').addClass('active');
-}
-
-// パスワード更新完了アラート表示
-const passwordUpdateSuccessAlertFlag = getParam('passwordUpdateComplete');
-if (passwordUpdateSuccessAlertFlag) {
   $('.success_alert').addClass('active');
 }
 

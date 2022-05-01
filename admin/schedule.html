@@ -25,10 +25,13 @@
     <!-- css -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/mypage/modal.css">
-    <link rel="stylesheet" href="../css/mypage/mypage.css">
-    <link rel="stylesheet" href="../css/mypage/reserve.css">
     <link rel="stylesheet" href="../css/reserve_calendar.css">
+    <link rel="stylesheet" href="../css/mypage/mypage.css">
+    <link rel="stylesheet" href="../css/admin/admin.css">
+    <link rel="stylesheet" href="../css/admin/schedule.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+
 </head>
 
 <body>
@@ -44,7 +47,7 @@
                 </div>
             </div>
             <div class="mypage_header_account">
-                <p>山田太郎さん</p>
+                <p>ページ管理者</p>
                 <a href="../login.html">ログアウト</a>
             </div>
         </div>
@@ -56,20 +59,20 @@
         <section>
             <div class="contents_link_wrap">
                 <li>
-                    <a href="top.html">トップ</a>
+                    <a href="member.html">アカウント管理</a>
+                </li>
+                <li>
+                    <a href="account.html">アカウント発行</a>
+                </li>
+                <li>
+                    <a href="reserve.html">予約管理</a>
                 </li>
                 <li class="active">
-                    <a href="reserve.html">レッスン予約</a>
-                </li>
-                <li>
-                    <a href="member_detail.html">会員情報</a>
-                </li>
-                <li>
-                    <a href="password_change.html">パスワード変更</a>
+                    <a href="schedule.html">予約枠調整</a>
                 </li>
             </div>
             <div class="content_title_wrap">
-                <h3>レッスン予約</h3>
+                <h3>予約枠調整</h3>
             </div>
         </section>
 
@@ -79,7 +82,7 @@
                 <div class="alert_inner">
                     <div class="alert_left">
                         <i class="fas fa-check-circle"></i>
-                        <p>レッスン予約が完了しました。</p>
+                        <p>予約枠の調整が完了しました。</p>
                     </div>
                     <div class="alert_right">
                         <i class="fas fa-times alert_delete"></i>
@@ -88,7 +91,7 @@
             </div>
             <div class="content_wrap">
                 <h4 class="content_sub_title">
-                    予約空き状況
+                    予約カレンダー
                 </h4>
                 <div class="reserve_head">
                     <div class="prev_month">
@@ -142,26 +145,26 @@
                             <p>~</p>
                             <p>10:00</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol not_available">
-                            <p>×</p>
+                        <td class="schedule_check_wrap">
+                            <p>予約済</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
                         <td class="time">
                             <p>9:00</p>
@@ -175,26 +178,26 @@
                             <p>~</p>
                             <p>11:00</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <p>予約済</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol not_available">
-                            <p>×</p>
+                        <td class="schedule_check_wrap">
+                            <p>予約済</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
                         <td class="time">
                             <p>10:00</p>
@@ -208,26 +211,26 @@
                             <p>~</p>
                             <p>12:00</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol not_available">
-                            <p>×</p>
+                        <td class="schedule_check_wrap">
+                            <p>予約済</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
                         <td class="time">
                             <p>11:00</p>
@@ -241,26 +244,26 @@
                             <p>~</p>
                             <p>14:00</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol not_available">
-                            <p>×</p>
+                        <td class="schedule_check_wrap">
+                            <p>予約済</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
                         <td class="time">
                             <p>13:00</p>
@@ -274,26 +277,26 @@
                             <p>~</p>
                             <p>15:00</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="" checked>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol not_available">
-                            <p>×</p>
+                        <td class="schedule_check_wrap">
+                            <p>予約済</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
                         <td class="time">
                             <p>14:00</p>
@@ -307,26 +310,26 @@
                             <p>~</p>
                             <p>16:00</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="" checked>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol not_available">
-                            <p>×</p>
+                        <td class="schedule_check_wrap">
+                            <p>予約済</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
                         <td class="time">
                             <p>15:00</p>
@@ -340,26 +343,26 @@
                             <p>~</p>
                             <p>17:00</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol not_available">
-                            <p>×</p>
+                        <td class="schedule_check_wrap">
+                            <p>予約済</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
                         <td class="time">
                             <p>16:00</p>
@@ -373,26 +376,26 @@
                             <p>~</p>
                             <p>18:00</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
-                        <td class="reserve_symbol not_available">
-                            <p>×</p>
+                        <td class="schedule_check_wrap">
+                            <p>予約済</p>
                         </td>
-                        <td class="reserve_symbol available">
-                            <p>○</p>
+                        <td class="schedule_check_wrap">
+                            <input type="checkbox" name="" id="">
                         </td>
                         <td class="time">
                             <p>17:00</p>
@@ -401,21 +404,8 @@
                         </td>
                     </tr>
                 </table>
-            </div>
-
-            <!-- 予約確認モーダル -->
-            <div id="reserveModal" class="modal">
-                <div class="modal_inner">
-                    <div class="modal_header">
-                        以下の内容で予約しますか？
-                    </div>
-                    <div class="modal_body">
-                        2022年4月19(火）9:00 ~ 10:00
-                    </div>
-                    <div class="modal_footer">
-                        <a href="reserve.html?editComplete=true" class="modal_btn modal_success_btn">予約確定</a>
-                        <a href="#" class="modal_btn modal_cancel_btn" rel="modal:close">キャンセル</a>
-                    </div>
+                <div class="common_btn_wrap">
+                    <a href="schedule.html?editComplete=true" class="common_btn edit_btn">登録</a>
                 </div>
             </div>
         </section>
@@ -425,12 +415,14 @@
     <script src=" https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
         </script>
+
     <!-- jQuery Modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
     <script src="../js/script.js"></script>
-    <script src="../js/mypage.js"></script>
     <script src="../js/reserve_calendar.js"></script>
+    <script src="../js/mypage.js"></script>
 </body>
 
 </html>
