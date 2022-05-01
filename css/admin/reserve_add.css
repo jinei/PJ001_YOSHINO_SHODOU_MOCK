@@ -50,6 +50,10 @@
   margin-left: 40px;
 }
 
+.reserve_add_form_input_element select:disabled {
+  background: #f2f2f2;
+}
+
 .select_wrap i {
   display: flex;
   justify-content: center;

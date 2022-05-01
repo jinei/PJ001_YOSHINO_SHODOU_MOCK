@@ -47,6 +47,11 @@
   cursor: pointer;
 }
 
+.reserve_add_link {
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
 /* タブレット（全般） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {}
 

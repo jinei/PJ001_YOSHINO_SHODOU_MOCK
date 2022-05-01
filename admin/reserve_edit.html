@@ -30,8 +30,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mypage/mypage.css">
     <link rel="stylesheet" href="../css/admin/admin.css">
-    <link rel="stylesheet" href="../css/reserve_list.css">
-    <link rel="stylesheet" href="../css/admin/reserve.css">
+    <link rel="stylesheet" href="../css/admin/reserve_add.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+
 </head>
 
 <body>
@@ -91,81 +93,38 @@
             </div>
             <div class="content_wrap">
                 <h4 class="content_sub_title">
-                    予約一覧
+                    予約変更
                 </h4>
-                <div class="condition_wrap">
-                    <label for="">レッスン日時</label>
-                    <i class="fas fa-calendar-alt"></i>
-                    <input type="text" id="datepicker" data-language='en' data-date-format="yyyy/mm/dd"> <a
-                        href="reserve.html" class="search_btn_small edit_btn">検索</a>
-                    <a href="reserve_add.html" class="reserve_add_link">
-                        ＋予約追加</a>
-                </div>
-                <table>
-                    <tr>
-                        <th>予約番号</th>
-                        <th>レッスン日時</th>
-                        <th>ZoomURL</th>
-                        <th>予約受付日</th>
-                        <th>キャンセル</th>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><a>https://xxx.co.jp</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
-                    </tr>
-                    <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><a>https://xxx.co.jp</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
-                    </tr>
-                    <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><a>https://xxx.co.jp</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
-                    </tr>
-                    <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><a>https://xxx.co.jp</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
-                    </tr>
-                    <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td class="canceled">キャンセル済</td>
-                        <td>2022/4/01 10:30</td>
-                        <td>
-                            <div class="cancel_date">
-                                <p>キャンセル</p>
-                                <p>2022/4/01 10:30</p>
+                <form action="">
+                    <div class="reserve_add_form_wrap">
+                        <div class="reserve_add_form_inner">
+                            <div class="member_form_body">
+                                <div class="reserve_add_form_input_element">
+                                    <label for="password">受講者</label>
+                                    <div class="select_wrap">
+                                        <i class="fas fa-angle-down"></i>
+                                        <select name="" id="" disabled>
+                                            <option value=""></option>
+                                            <option value="" selected>山田太郎:yamadatarou@xxx.com</option>
+                                            <option value="">佐藤次郎:satoujirou@xxx.com</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="reserve_add_form_input_element">
+                                    <label for="password">レッスン日時</label>
+                                    <div class="select_wrap">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <input type="text" id="datepicker" data-language='en'
+                                            data-date-format="yyyy/mm/dd" value="2022/04/01">
+                                    </div>
+                                </div>
+                                <div class="common_btn_wrap">
+                                    <a href="reserve.html?editComplete=true" class="common_btn edit_btn">変更</a>
+                                </div>
                             </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><a>https://xxx.co.jp</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
-                    </tr>
-                </table>
-                <ul class="pagination">
-                    <li><a href=""><i class="fas fa-angle-left"></i></a></li>
-                    <li class="active"><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href=""><i class="fas fa-angle-right"></i></a></li>
-                </ul>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
