@@ -255,6 +255,58 @@ body {
   font-size: 3rem;
 }
 
+/*================================================
+
+* component *
+
+================================================*/
+
+.content_wrap {
+  margin: 10rem auto;
+  width: 960px;
+}
+
+.content_title {
+  position: relative;
+  font-size: 3.2rem;
+  font-family: 'Yuji Syuku',
+    serif;
+  color: #3E1300;
+}
+
+.content_title_border {
+  width: 480px;
+  height: 10px;
+  margin-top: 2rem;
+}
+
+.common_link_wrap {
+  margin-top: 4rem;
+  width: 240px;
+  transition: all 500ms;
+}
+
+.common_link {
+  display: block;
+  width: 100%;
+  font-family: 'Yuji Syuku',
+    serif;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.stickarrow {
+  width: 100%;
+  height: 8px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: skew(45deg);
+}
+
+.common_link_wrap:hover {
+  transform: translate(2rem, 0);
+}
+
 /* タブレット（全般） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .header_box {
@@ -299,6 +351,20 @@ body {
   .header_sp_menu {
     display: block;
   }
+
+  .content_title_border {
+    width: 90%;
+  }
+
+  .content_wrap {
+    margin: 8rem auto;
+    width: 90%;
+  }
+
+  .content_title {
+    font-size: 2rem;
+  }
+
 }
 
 /* sp（iPhone SE） */
