@@ -243,6 +243,7 @@
   font-family: 'Shippori Mincho B1',
     serif;
   z-index: 2;
+  color: #3E1300;
 }
 
 .feature_elements p {
@@ -344,6 +345,53 @@
   .online_lesson_details_inner h4,
   .online_lesson_details_inner h5 {
     text-align: center;
+  }
+
+  .feature_title,
+  .feature_sub_title {
+    float: inherit;
+    -ms-writing-mode: inherit;
+    writing-mode: inherit;
+    text-align: center;
+    transform: inherit;
+  }
+
+  .feature_sub_title {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+
+  .feature_elements {
+    flex-direction: column;
+  }
+
+  .feature_elements_deails,
+  .feature_elements_img {
+    width: 100%;
+  }
+
+  .feature_elements_img {
+    order: 0;
+  }
+
+  .feature_elements_deails {
+    margin-top: 5rem;
+    order: 1;
+  }
+
+  .feature_elements_img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .feature_elements_img img,
+  .feature_elements:nth-of-type(2) .feature_elements_img img,
+  .feature_elements:nth-of-type(3) .feature_elements_img img {
+    filter: drop-shadow(0px 80px 0px #FFFFFF);
+  }
+
+  .feature_elements p {
+    margin-top: 2rem;
   }
 }
 
