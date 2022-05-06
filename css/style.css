@@ -321,6 +321,10 @@ body {
   .header_inner li a {
     font-size: 1.2rem;
   }
+
+  .content_wrap {
+    width: 80%;
+  }
 }
 
 /* sp（横向き） */
