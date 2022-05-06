@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin: auto;
+  max-width: 1350px;
   width: 70%;
   height: 240px;
 }
@@ -23,6 +24,12 @@
 
 .top_header_menu_wrap li:hover {
   transform: translate(0, 2rem);
+}
+
+.top_header_menu_wrap,
+.top_header_form_wrap,
+.top_header_line_wrap {
+  height: 90%;
 }
 
 .top_header_form_wrap {
@@ -87,4 +94,37 @@
 .top_header_line_box img {
   width: 55%;
   margin: auto;
+}
+
+.slider_wrap {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.slider,
+.slider img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.slider_logo_wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 320px;
+}
+
+.slider_logo_wrap img {
+  width: 100%;
+}
+
+.slider_caption_img {
+  position: absolute;
+  right: 15rem;
+  bottom: 7.5rem;
 }
