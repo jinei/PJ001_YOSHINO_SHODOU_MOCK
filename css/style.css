@@ -274,6 +274,13 @@ body {
   color: #3E1300;
 }
 
+.content_sub_title {
+  font-size: 2.4rem;
+  color: #3E1300;
+  font-family: 'Yuji Syuku',
+    serif;
+}
+
 .content_title_border {
   width: 480px;
   height: 10px;

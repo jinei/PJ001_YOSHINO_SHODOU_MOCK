@@ -196,6 +196,85 @@
   border-right: 1px solid #ffffff;
 }
 
+.feature_title {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  float: right;
+}
+
+.feature_sub_title {
+  margin-top: 10rem;
+  text-align: right;
+  float: right;
+  transform: rotate(90deg);
+}
+
+.feature_elements {
+  position: relative;
+  top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.feature_elements:nth-of-type(2),
+.feature_elements:nth-of-type(3) {
+  margin-top: 3rem;
+}
+
+.feature_elements:nth-of-type(2) .feature_elements_deails {
+  order: 1;
+}
+
+.feature_elements:nth-of-type(2) .feature_elements_img {
+  order: 0;
+}
+
+.feature_elements_deails,
+.feature_elements_img {
+  width: 50%;
+}
+
+.feature_elements h5 {
+  position: relative;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Shippori Mincho B1',
+    serif;
+  z-index: 2;
+}
+
+.feature_elements p {
+  position: relative;
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  z-index: 2;
+}
+
+.feature_elements_img {
+  text-align: center;
+}
+
+.feature_elements_img img {
+  position: relative;
+  width: 400px;
+  height: 320px;
+  filter: drop-shadow(-240px -40px 0px #FCFCFC);
+  border-radius: 50%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.feature_elements:nth-of-type(2) .feature_elements_img img {
+  filter: drop-shadow(240px 20px 0px #FCFCFC);
+}
+
+.feature_elements:nth-of-type(3) .feature_elements_img img {
+  filter: drop-shadow(-240px 20px 0px #FCFCFC);
+}
+
 /* タブレット（全般） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .top_header_wrap {
