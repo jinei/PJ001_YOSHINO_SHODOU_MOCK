@@ -98,10 +98,9 @@
 
 .slider_wrap {
   position: relative;
-  width: 100%;
-  height: 100vh;
 }
 
+.slider_wrap,
 .slider,
 .slider img {
   width: 100%;
@@ -128,3 +127,40 @@
   right: 15rem;
   bottom: 7.5rem;
 }
+
+/* タブレット（全般） */
+@media screen and (min-width: 600px) and (max-width: 1024px) {}
+
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {}
+
+/* sp全般 */
+@media screen and (max-width: 600px) {
+  .top_header_wrap {
+    display: none;
+  }
+
+  .slider_wrap {
+    margin-top: 10vh;
+  }
+
+  .slider_wrap,
+  .slider,
+  .slider img {
+    height: 60vh;
+  }
+
+  .slider_logo_wrap {
+    width: 50vw;
+  }
+
+  .slider_caption_img {
+    width: 25vw;
+    bottom: 2rem;
+    right: 1rem;
+  }
+
+}
+
+/* sp（iPhone SE） */
+@media screen and (width: 320px) {}
