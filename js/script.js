@@ -1,5 +1,6 @@
 window.onload = function () {
   $('.sp_menu').hide();
+  $('.header_box').hide();
 };
 
 $(".header_sp_menu_btn").click(function () {

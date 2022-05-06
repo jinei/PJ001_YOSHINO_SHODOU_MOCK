@@ -1,0 +1,90 @@
+.top_header_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 70%;
+  height: 240px;
+}
+
+.top_header_wrap .top_header_logo {
+  height: 100%;
+}
+
+.top_header_menu_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_header_menu_wrap li {
+  list-style: none;
+  margin: 0 1.5rem;
+  transition: all 250ms;
+}
+
+.top_header_menu_wrap li:hover {
+  transform: translate(0, 2rem);
+}
+
+.top_header_form_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_header_form_wrap a,
+.top_header_form_wrap i {
+  font-size: 1.6rem;
+}
+
+.top_header_form_wrap i {
+  margin-right: .5rem;
+}
+
+.top_header_form_wrap a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  color: #ffffff;
+  border-radius: 50px;
+  font-family: 'Shippori Mincho B1',
+    serif;
+}
+
+.top_header_form_tel {
+  background-color: #3E1300;
+}
+
+.top_header_form_web {
+  background-color: #3F3F3F;
+  margin-top: 1rem;
+}
+
+.top_header_line_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.top_header_line_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 148px;
+  height: 148px;
+  background: #9AB490;
+  border-radius: 3px;
+}
+
+.top_header_line_box p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.top_header_line_box img {
+  width: 55%;
+  margin: auto;
+}
