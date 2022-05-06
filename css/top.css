@@ -134,6 +134,68 @@
   line-height: 2.4rem;
 }
 
+.online_lesson_wrap {
+  display: flex;
+  justify-content: center;
+  height: 280px;
+}
+
+.online_lesson_details {
+  display: flex;
+  align-items: center;
+  background-color: #3E1300;
+}
+
+.online_lesson_img,
+.online_lesson_details {
+  width: 50%;
+}
+
+.online_lesson_img {
+  object-fit: cover;
+}
+
+.online_lesson_details_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  width: 80%;
+  height: 70%;
+}
+
+.online_lesson_details_inner h4,
+.online_lesson_details_inner h5 {
+  font-family: 'Yuji Syuku',
+    serif;
+}
+
+.online_lesson_details_inner h4 {
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+
+.online_lesson_details_inner h5 {
+  font-size: 1.6rem;
+  color: #AAA7A7;
+}
+
+.online_lesson_details_inner p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #ffffff;
+}
+
+.online_lesson_details .common_link {
+  color: #ffffff;
+}
+
+.online_lesson_details .stickarrow {
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
 /* タブレット（全般） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .top_header_wrap {
@@ -190,6 +252,19 @@
   .about_content {
     font-size: 1.2rem;
     line-height: 2rem;
+  }
+
+  .online_lesson_img {
+    display: none;
+  }
+
+  .online_lesson_details {
+    width: 100%;
+  }
+
+  .online_lesson_details_inner h4,
+  .online_lesson_details_inner h5 {
+    text-align: center;
   }
 }
 
