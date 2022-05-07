@@ -406,6 +406,28 @@
   opacity: 1;
 }
 
+.youtube_wrap {
+  margin: 10rem auto 0 auto;
+  width: 640px;
+  border: 2px solid #DFDDDD;
+  padding: 3rem;
+}
+
+.youtube_inner {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.youtube_inner iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* タブレット（全般） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .top_header_wrap {
@@ -602,6 +624,11 @@
 
   .lesson_card p {
     font-size: 1.4rem;
+  }
+
+  .youtube_wrap {
+    width: 90%;
+    padding: 1rem;
   }
 }
 
