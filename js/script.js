@@ -1,6 +1,7 @@
 window.onload = function () {
   $('.sp_menu').hide();
-  $('.header_box').hide();
+
+  // トップのスライダー
   $('.slider').slick({
     speed: 1500,
     fade: true,
@@ -9,6 +10,7 @@ window.onload = function () {
     arrows: false
   });
 
+  // 画面下部のスライダー
   $('.img_slider').slick({
     arrows: false,
     autoplay: true,
@@ -37,6 +39,21 @@ window.onload = function () {
   });
 
 };
+
+// ヘッダーの表示
+const headerIn = $('.header_in');
+if (headerIn.length > 0) {
+  const headerInOffset = headerIn.offset().top;
+  $(window).scroll(function () {
+    let scroll = $(this).scrollTop();
+    if (headerInOffset < scroll) {
+      $('.header_box').addClass('active');
+    } else {
+      $('.header_box').removeClass('active');
+    }
+  });
+}
+
 
 $(".header_sp_menu_btn").click(function () {
   $(this).toggleClass('active');
