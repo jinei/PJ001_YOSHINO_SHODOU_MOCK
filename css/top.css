@@ -243,7 +243,7 @@
   font-family: 'Shippori Mincho B1',
     serif;
   z-index: 2;
-  color: #3E1300;
+  color: #333333;
 }
 
 .feature_elements p {
@@ -262,7 +262,7 @@
   position: relative;
   width: 400px;
   height: 320px;
-  filter: drop-shadow(-240px -40px 0px #FCFCFC);
+  filter: drop-shadow(-240px 20px 0px #FCFCFC);
   border-radius: 50%;
   z-index: 1;
   object-fit: cover;
@@ -270,10 +270,6 @@
 
 .feature_elements:nth-of-type(2) .feature_elements_img img {
   filter: drop-shadow(240px 20px 0px #FCFCFC);
-}
-
-.feature_elements:nth-of-type(3) .feature_elements_img img {
-  filter: drop-shadow(-240px 20px 0px #FCFCFC);
 }
 
 .lesson_wrap {
@@ -324,6 +320,7 @@
   display: flex;
   justify-content: space-between;
   width: 90%;
+  max-width: 1350px;
   margin: 15rem auto 0 auto;
 }
 
@@ -466,7 +463,7 @@
 
   .lesson_card {
     width: 33%;
-    height: 40vw;
+    height: 42.5vw;
   }
 
   .lesson_card h6 {

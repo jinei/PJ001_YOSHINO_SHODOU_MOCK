@@ -315,6 +315,66 @@ body {
   transform: translate(2rem, 0);
 }
 
+/*================================================
+
+* contact *
+
+================================================*/
+.contact_wrap {
+  margin: 10rem auto 0 auto;
+  width: 1080px;
+}
+
+.contact_title {
+  font-size: 2.4rem;
+  font-family: 'Shippori Mincho B1',
+    serif;
+  text-align: center;
+}
+
+.contact_inner {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.contact_element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 33%;
+  text-align: center;
+  height: 180px;
+}
+
+.contact_element:not(.contact_element:first-of-type) {
+  border-left: 2px solid #333333;
+}
+
+.contact_element h5 {
+  font-size: 2.4rem;
+  font-family: 'Yuji Syuku',
+    serif;
+}
+
+.contact_element a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: 85%;
+  height: 6rem;
+  border: 3px solid #333333;
+  font-size: 2rem;
+  color: #333333;
+  transition: all 200ms;
+}
+
+.contact_element a:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
 /* タブレット（全般） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .header_box {
@@ -331,7 +391,16 @@ body {
   }
 
   .content_wrap {
-    width: 80%;
+    width: 90%;
+  }
+
+  .contact_wrap {
+    width: 90%;
+  }
+
+  .contact_element h5,
+  .contact_element a {
+    font-size: 1.6rem;
   }
 }
 
@@ -373,10 +442,39 @@ body {
     width: 90%;
   }
 
+  .contact_wrap {
+    width: 100%;
+  }
+
   .content_title {
     font-size: 2rem;
   }
 
+  .contact_inner {
+    padding: 2.5rem 0;
+    flex-direction: column;
+    background: #3E1300;
+  }
+
+  .contact_element {
+    margin: auto;
+    width: 80%;
+    height: 20rem;
+  }
+
+  .contact_element:not(.contact_element:first-of-type) {
+    border-top: 2px solid #ffffff;
+    border-left: inherit;
+  }
+
+  .contact_element h5,
+  .contact_element a {
+    color: #ffffff;
+  }
+
+  .contact_element a {
+    border: 2px solid #ffffff;
+  }
 }
 
 /* sp（iPhone SE） */
