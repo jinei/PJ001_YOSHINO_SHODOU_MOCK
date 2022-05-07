@@ -28,7 +28,7 @@
 
 .top_header_menu_wrap,
 .top_header_form_wrap,
-.top_header_line_wrap {
+.line_qrwrap {
   height: 90%;
 }
 
@@ -69,31 +69,9 @@
   margin-top: 1rem;
 }
 
-.top_header_line_wrap {
+.line_qrwrap {
   display: flex;
   align-items: center;
-}
-
-.top_header_line_box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 148px;
-  height: 148px;
-  background: #9AB490;
-  border-radius: 3px;
-}
-
-.top_header_line_box p {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-top: 2rem;
-}
-
-.top_header_line_box img {
-  width: 55%;
-  margin: auto;
 }
 
 .slider_wrap {
@@ -439,7 +417,7 @@
     width: 22vw;
   }
 
-  .top_header_line_box {
+  .line_qrbox {
     width: 18vw;
     height: 18vw;
   }

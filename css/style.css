@@ -136,7 +136,7 @@ body {
   width: 100%;
   height: 10vh;
   background: #FFFFFF;
-  z-index: 1;
+  z-index: 8;
 }
 
 .header_sp_logo_wrap {
@@ -329,6 +329,40 @@ body {
 
 .common_link_wrap:hover {
   transform: translate(2rem, 0);
+}
+
+.line_qr_fix_wrap {
+  transform: translate(50rem, 0);
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  transition: .7s;
+}
+
+.line_qr_fix_wrap.active {
+  transform: translate(0, 0);
+}
+
+.line_qrbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 148px;
+  height: 148px;
+  background: #9AB490;
+  border-radius: 3px;
+}
+
+.line_qrbox p {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+
+.line_qrbox img {
+  width: 55%;
+  margin: auto;
 }
 
 /*================================================
@@ -540,6 +574,7 @@ body {
   .accrss_wrap {
     width: 80%;
   }
+
 }
 
 /* sp（横向き） */
@@ -637,6 +672,10 @@ body {
 
   .links {
     width: 70%;
+  }
+
+  .line_qr_fix_wrap {
+    display: none;
   }
 }
 

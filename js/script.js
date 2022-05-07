@@ -48,8 +48,10 @@ if (headerIn.length > 0) {
     let scroll = $(this).scrollTop();
     if (headerInOffset < scroll) {
       $('.header_box').addClass('active');
+      $('.line_qr_fix_wrap').addClass('active');
     } else {
       $('.header_box').removeClass('active');
+      $('.line_qr_fix_wrap').removeClass('active');
     }
   });
 }
