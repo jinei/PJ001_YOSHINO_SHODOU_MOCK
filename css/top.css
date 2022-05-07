@@ -167,11 +167,12 @@
 
 .online_lesson_details .common_link {
   color: #ffffff;
+  padding-left: 5rem;
 }
 
-.online_lesson_details .stickarrow {
-  border-bottom: 1px solid #ffffff;
-  border-right: 1px solid #ffffff;
+.online_lesson_details .common_link::before,
+.online_lesson_details .common_link::after {
+  background: #ffffff;
 }
 
 .feature_title {
@@ -373,8 +374,11 @@
 }
 
 .lesson_card .mask .caption {
+  width: 60%;
+  padding: 2rem 0;
   font-size: 2rem;
   color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .lesson_card:hover .mask {

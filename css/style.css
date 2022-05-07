@@ -311,24 +311,47 @@ body {
 }
 
 .common_link {
-  display: block;
   width: 100%;
   font-family: 'Yuji Syuku',
     serif;
   font-size: 1.4rem;
-  text-align: center;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  outline: none;
 }
 
-.stickarrow {
-  width: 100%;
-  height: 8px;
-  border-bottom: 1px solid #333333;
-  border-right: 1px solid #333333;
-  transform: skew(45deg);
+.common_link::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0%;
+  width: 85%;
+  height: 1px;
+  background: #333;
+  transition: all .3s;
 }
 
-.common_link_wrap:hover {
-  transform: translate(2rem, 0);
+.common_link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  right: 15%;
+  width: 15px;
+  height: 1px;
+  background: #333;
+  transform: rotate(35deg);
+  transition: all .3s;
+}
+
+.common_link:hover::before {
+  left: 15%;
+}
+
+.common_link:hover::after {
+  right: 0%;
 }
 
 .line_qr_fix_wrap {
