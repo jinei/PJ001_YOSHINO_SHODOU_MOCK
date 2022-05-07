@@ -203,7 +203,7 @@
 }
 
 .feature_sub_title {
-  margin-top: 10rem;
+  margin-top: 13rem;
   text-align: right;
   float: right;
   transform: rotate(90deg);
@@ -276,6 +276,136 @@
   filter: drop-shadow(-240px 20px 0px #FCFCFC);
 }
 
+.lesson_wrap {
+  margin-top: 20rem;
+}
+
+.lesson_title {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  float: left;
+}
+
+.lesson_sub_title {
+  margin-top: 18rem;
+  float: left;
+  transform: rotate(90deg);
+}
+
+.lesson_details_wrap {
+  position: relative;
+  top: 2.5rem;
+  left: 10rem;
+}
+
+.lesson_details_wrap h5 {
+  font-size: 2rem;
+}
+
+.lesson_details_wrap ul {
+  margin-top: .5rem;
+}
+
+.lesson_details_wrap li,
+.lesson_details_wrap p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.lesson_details_wrap li::before {
+  content: '・';
+}
+
+.lesson_details_wrap p {
+  margin-top: 3rem;
+}
+
+.lesson_card_wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 15rem auto 0 auto;
+}
+
+.lesson_card {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #FFFFFF;
+  border: 1px solid #C2C2C2;
+  border-radius: 2px;
+  text-align: center;
+  transition: all 1s;
+}
+
+.lesson_card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 160px;
+  background-image: url('../img/lesson_details.png');
+}
+
+.lesson_card img {
+  margin-top: 1.5rem;
+  width: 90%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.lesson_card h6 {
+  margin: 2rem auto 1rem auto;
+  padding: 1rem 0;
+  width: 60%;
+  font-size: 2rem;
+  border-top: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  font-family: 'Yuji Syuku',
+    serif;
+}
+
+.lesson_card p {
+  font-size: 1.6rem;
+  font-family: 'Yuji Syuku',
+    serif;
+}
+
+.lesson_card small {
+  display: block;
+  margin-top: .5rem;
+  font-size: 1.2rem;
+  color: #9C9C9C;
+  font-family: 'Yuji Syuku',
+    serif;
+}
+
+.lesson_card .mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.lesson_card .mask .caption {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.lesson_card:hover .mask {
+  opacity: 1;
+}
+
 /* タブレット（全般） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .top_header_wrap {
@@ -302,6 +432,35 @@
   .feature_elements_img img {
     width: 100%;
     height: 25rem;
+  }
+
+  .lesson_details_wrap {
+    left: 4rem;
+  }
+
+  .lesson_card_wrap {
+    width: 95%;
+  }
+
+  .lesson_card {
+    width: 33%;
+    height: 40vw;
+  }
+
+  .lesson_card h6 {
+    font-size: 1.6rem;
+  }
+
+  .lesson_card p {
+    font-size: 1.4rem;
+  }
+
+  .lesson_card small {
+    font-size: 1rem;
+  }
+
+  .lesson_card img {
+    height: 60%;
   }
 }
 
@@ -361,7 +520,8 @@
     transform: inherit;
   }
 
-  .feature_sub_title {
+  .feature_sub_title,
+  .lesson_sub_title {
     font-size: 1.6rem;
     margin-top: 1rem;
   }
@@ -397,6 +557,51 @@
 
   .feature_elements p {
     margin-top: 2rem;
+  }
+
+  .lesson_title,
+  .lesson_sub_title {
+    text-align: center;
+    writing-mode: inherit;
+    float: inherit;
+  }
+
+  .lesson_sub_title {
+    transform: inherit;
+  }
+
+  .lesson_details_wrap {
+    left: inherit;
+    top: 3rem;
+  }
+
+  .lesson_details_wrap h5 {
+    font-size: 1.6rem;
+  }
+
+  .lesson_details_wrap li,
+  .lesson_details_wrap p {
+    font-size: 1.4rem;
+  }
+
+  .lesson_card_wrap {
+    flex-direction: column;
+    width: 90%;
+    margin: 5rem auto 0 auto;
+  }
+
+  .lesson_card {
+    margin-top: 3rem;
+    width: 100%;
+    height: 40rem;
+  }
+
+  .lesson_card h6 {
+    font-size: 1.6rem;
+  }
+
+  .lesson_card p {
+    font-size: 1.4rem;
   }
 }
 
