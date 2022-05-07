@@ -384,17 +384,48 @@ body {
   border-radius: 3px;
 }
 
-/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-
 .img_slider img {
   width: 100%;
-  /*スライダー内の画像を横幅100%に*/
   height: auto;
 }
 
 .img_slider .slick-slide {
   margin: 0 10px;
-  /*スライド左右の余白調整*/
+}
+
+.accrss_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem auto 0 auto;
+  width: 760px;
+}
+
+.accrss_wrap img {
+  width: 40%;
+}
+
+.access_details {
+  width: 45%;
+}
+
+.access_details h6 {
+  font-family: 'Yuji Syuku',
+    serif;
+  font-size: 2.4rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #CECECE;
+}
+
+.access_details_elements {
+  display: flex;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.access_details_elements p {
+  width: 50%;
+  font-size: 1.6rem;
 }
 
 /* タブレット（全般） */
@@ -423,6 +454,10 @@ body {
   .contact_element h5,
   .contact_element a {
     font-size: 1.6rem;
+  }
+
+  .accrss_wrap {
+    width: 80%;
   }
 }
 
@@ -496,6 +531,23 @@ body {
 
   .contact_element a {
     border: 2px solid #ffffff;
+  }
+
+  .accrss_wrap {
+    flex-direction: column;
+  }
+
+  .accrss_wrap {
+    width: 80%;
+  }
+
+  .accrss_wrap img {
+    width: 50%;
+  }
+
+  .access_details {
+    margin-top: 5rem;
+    width: 100%;
   }
 }
 
