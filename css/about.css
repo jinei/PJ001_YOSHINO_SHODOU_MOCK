@@ -61,6 +61,94 @@
   line-height: 3rem;
 }
 
+.teacher_wrap {
+  margin-top: 15rem;
+}
+
+.teacher_wrap .content_title,
+.teacher_wrap .content_sub_title {
+  text-align: center;
+}
+
+.teacher_details_wrap {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.teacher_details {
+  width: 50%;
+}
+
+.teacher_details h5,
+.teacher_details h6 {
+  font-family: 'Yuji Syuku',
+    serif;
+}
+
+.teacher_details h5 {
+  font-size: 2.4rem;
+}
+
+.teacher_details h6 {
+  margin-top: .5rem;
+  font-size: 1.6rem;
+}
+
+.teacher_details p {
+  margin-top: 3rem;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+.teacher_details ul {
+  margin-top: 2rem;
+}
+
+.teacher_details ul li::before {
+  content: '-';
+  margin-right: 1rem;
+}
+
+.teacher_details ul li {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+.teacher_details_wrap img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.teacher_wrap .common_link_wrap {
+  margin: 15rem auto 15rem auto;
+}
+
+.teacher_wrap .common_link_wrap .common_link {
+  padding-left: 4rem;
+}
+
+/* タブレット（全般） */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .teacher_details p {
+    font-size: 1.6rem;
+  }
+
+  .teacher_details_wrap {
+    align-items: center;
+  }
+
+  .teacher_details_wrap img {
+    width: 45%;
+    height: 50%;
+  }
+
+  .teacher_details ul li {
+    font-size: 1.4rem;
+  }
+}
+
 /* sp全般 */
 @media screen and (max-width: 600px) {
 
@@ -91,5 +179,50 @@
 
   .greeting_body p {
     line-height: 2rem;
+  }
+
+  .teacher_details_wrap {
+    margin-top: 5rem;
+    flex-direction: column;
+  }
+
+  .teacher_details,
+  .teacher_details_wrap img {
+    width: 100%;
+  }
+
+  .teacher_details_wrap img {
+    margin-top: 3rem;
+  }
+
+  .teacher_details h5 {
+    font-size: 1.6rem;
+  }
+
+  .teacher_details h6,
+  .teacher_details p {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
+
+  .teacher_details p {
+    margin-top: 1rem;
+  }
+
+  .teacher_details ul {
+    margin-top: 1rem;
+  }
+
+  .teacher_details ul li {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .teacher_details ul li::before {
+    margin-right: .5rem;
+  }
+
+  .teacher_wrap .common_link_wrap {
+    margin: 8rem auto 8rem auto;
   }
 }
