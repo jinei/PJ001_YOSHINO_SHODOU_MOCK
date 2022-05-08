@@ -26,6 +26,7 @@ body {
 ================================================*/
 #splash {
   position: fixed;
+  top: 0;
   width: 100%;
   height: 100%;
   z-index: 999;
@@ -734,6 +735,10 @@ body {
     width: 80%;
   }
 
+  #splash img {
+    width: 30rem;
+  }
+
 }
 
 /* sp（横向き） */
@@ -753,6 +758,11 @@ body {
 
 /* sp全般 */
 @media screen and (max-width: 600px) {
+
+  #splash img {
+    width: 20rem;
+  }
+
   .header_pc {
     display: none;
   }
