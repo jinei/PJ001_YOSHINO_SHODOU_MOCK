@@ -1,15 +1,6 @@
 window.onload = function () {
   $('.sp_menu').hide();
 
-  // トップのスライダー
-  $('.slider').slick({
-    speed: 1500,
-    fade: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false
-  });
-
   // 画面下部のスライダー
   $('.img_slider').slick({
     arrows: false,
@@ -75,13 +66,10 @@ if (headerIn.length > 0) {
   });
 }
 
-
 $(".header_sp_menu_btn").click(function () {
   $(this).toggleClass('active');
   $('.sp_menu').fadeToggle();
 });
-
-$('#datepicker').datepicker();
 
 function fadeAnime() {
   $('.fadeInTrigger').each(function () {

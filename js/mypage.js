@@ -47,3 +47,5 @@ $('#password_update_btn').on('click', function () {
 $('.alert_delete').on('click', function () {
   $(this).parents('.success_alert').removeClass('active');
 });
+
+$('#datepicker').datepicker();
