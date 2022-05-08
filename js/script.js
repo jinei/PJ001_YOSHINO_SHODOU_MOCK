@@ -38,6 +38,7 @@ window.onload = function () {
     ]
   });
 
+  fadeAnime();
 };
 
 // ヘッダーの表示
@@ -46,6 +47,8 @@ if (headerIn.length > 0) {
   const headerInOffset = headerIn.offset().top;
   $(window).scroll(function () {
     let scroll = $(this).scrollTop();
+
+    // ヘッダー表示
     if (headerInOffset < scroll) {
       $('.header_box').addClass('active');
       $('.line_qr_fix_wrap').addClass('active');
@@ -53,6 +56,8 @@ if (headerIn.length > 0) {
       $('.header_box').removeClass('active');
       $('.line_qr_fix_wrap').removeClass('active');
     }
+
+    fadeAnime();
   });
 }
 
@@ -63,3 +68,16 @@ $(".header_sp_menu_btn").click(function () {
 });
 
 $('#datepicker').datepicker();
+
+function fadeAnime() {
+  $('.fadeInTrigger').each(function () {
+    var elemPos = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass('fadeIn');
+    } else {
+      $(this).removeClass('fadeIn');
+    }
+  });
+}
