@@ -1,3 +1,95 @@
 .sub_firstview {
   background-image: url('../img/1625751_s.jpg');
 }
+
+.greeting_wrap {
+  margin-top: 10rem;
+}
+
+.greeting_title_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting_title_wrap h4 {
+  position: relative;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-family: 'Yuji Syuku',
+    serif;
+  font-size: 3.6rem;
+  letter-spacing: 1rem;
+  color: #3E1300;
+}
+
+.greeting_title_wrap h4::before,
+.greeting_title_wrap h4::after {
+  position: absolute;
+  top: 50%;
+  content: '';
+  width: 160px;
+  height: 2px;
+  background-color: #CDCDCD;
+}
+
+.greeting_title_wrap h4::before {
+  right: 8rem;
+}
+
+.greeting_title_wrap h4::after {
+  left: 8rem;
+}
+
+.greeting_body_wrap {
+  margin: 5rem auto 0 auto;
+  width: 480px;
+}
+
+.greeting_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.greeting_body p {
+  font-size: 1.6rem;
+  letter-spacing: 1rem;
+  line-height: 3rem;
+}
+
+/* sp全般 */
+@media screen and (max-width: 600px) {
+
+  .greeting_title_wrap h4 {
+    font-size: 2.4rem;
+  }
+
+  .greeting_title_wrap h4::before,
+  .greeting_title_wrap h4::after {
+    width: 10rem;
+  }
+
+  .greeting_title_wrap h4::before {
+    right: 6rem;
+  }
+
+  .greeting_title_wrap h4::after {
+    left: 6rem;
+  }
+
+  .greeting_body p {
+    font-size: 1.4rem;
+  }
+
+  .greeting_body_wrap {
+    width: 95%;
+  }
+
+  .greeting_body p {
+    line-height: 2rem;
+  }
+}
