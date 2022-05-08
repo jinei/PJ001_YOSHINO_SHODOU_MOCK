@@ -21,6 +21,30 @@ body {
 
 /*================================================
 
+* loading *
+
+================================================*/
+#splash {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #F6F6F6;
+  text-align: center;
+}
+
+#splash img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  width: 160px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+/*================================================
+
 * header *
 
 ================================================*/

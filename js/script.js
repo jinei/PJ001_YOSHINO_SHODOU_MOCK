@@ -38,7 +38,21 @@ window.onload = function () {
     ]
   });
 
+  // アニメーション表示
   fadeAnime();
+
+  // 画面表示
+  const openFlg = sessionStorage.getItem('openFlg') == "true";
+  // 一度でも開いたことがある場合
+  if (openFlg) {
+    $("#splash").fadeOut(800);
+  }
+  // ページに初めて来た時
+  else {
+    sessionStorage.setItem('openFlg', true);
+    $("#splash img").addClass('fadeIn')
+    $("#splash").delay(1500).fadeOut(800);
+  }
 };
 
 // ヘッダーの表示
