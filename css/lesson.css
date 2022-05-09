@@ -38,7 +38,7 @@
 .lesson_demo {
   display: inline-block;
   margin: 3rem auto;
-  padding: 4rem 4rem;
+  padding: 4rem;
   background-color: #FFFFFF;
   border: 1px solid #C2C2C2;
   font-size: 1.6rem;
@@ -128,4 +128,54 @@ td {
 .option_title::after {
   content: '>';
   margin-left: .25rem;
+}
+
+/* sp全般 */
+@media screen and (max-width: 600px) {
+
+  table {
+    margin: 3rem auto 0 auto;
+  }
+
+  th,
+  td {
+    width: 30%;
+    font-size: 1.4rem;
+  }
+
+  .warning_note {
+    width: 100%;
+  }
+
+
+  .lesson_title {
+    width: 70%;
+  }
+
+  .lesson_caption,
+  .lesson_caption a {
+    font-size: 1.4rem;
+  }
+
+  .lesson_caption {
+    width: 90%;
+    line-height: 2.4rem;
+  }
+
+  .lesson_demo {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .warning_note {
+    font-size: 1.2rem;
+  }
+
+  .guide_button_wrap {
+    width: 100%;
+  }
+
+  .guide_button {
+    width: 45%;
+  }
 }
