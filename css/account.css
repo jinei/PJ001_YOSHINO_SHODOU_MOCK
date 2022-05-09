@@ -75,6 +75,11 @@
   color: #5095E7;
 }
 
+.account_form_body p {
+  margin-top: 5rem;
+  font-size: 1.6rem;
+}
+
 /* タブレット（全般） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {}
 
