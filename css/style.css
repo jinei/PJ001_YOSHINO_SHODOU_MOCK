@@ -408,9 +408,13 @@ body {
   margin-top: 2rem;
 }
 
-.line_qrbox img {
+.line_qrbox picture {
   width: 55%;
   margin: auto;
+}
+
+.line_qrbox img {
+  width: 100%;
 }
 
 /*================================================
