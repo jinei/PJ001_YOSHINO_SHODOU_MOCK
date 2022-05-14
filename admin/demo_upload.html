@@ -30,10 +30,8 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mypage/mypage.css">
     <link rel="stylesheet" href="../css/admin/admin.css">
-    <link rel="stylesheet" href="../css/admin/reserve_add.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
-
+    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/admin/reserve.css">
 </head>
 
 <body>
@@ -69,13 +67,13 @@
                 <li>
                     <a href="account.html">アカウント発行</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="reserve.html">予約管理</a>
                 </li>
                 <li>
                     <a href="schedule.html">予約枠調整</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="demo_upload.html">お手本アップロード</a>
                 </li>
             </div>
@@ -99,38 +97,65 @@
             </div>
             <div class="content_wrap">
                 <h4 class="content_sub_title">
-                    予約変更
+                    お手本一覧
                 </h4>
-                <form action="">
-                    <div class="reserve_add_form_wrap">
-                        <div class="reserve_add_form_inner">
-                            <div class="member_form_body">
-                                <div class="reserve_add_form_input_element">
-                                    <label for="password">受講者</label>
-                                    <div class="select_wrap">
-                                        <i class="fas fa-angle-down"></i>
-                                        <select name="" id="" disabled>
-                                            <option value=""></option>
-                                            <option value="" selected>山田太郎:yamadatarou@xxx.com</option>
-                                            <option value="">佐藤次郎:satoujirou@xxx.com</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="reserve_add_form_input_element">
-                                    <label for="password">レッスン日時</label>
-                                    <div class="select_wrap">
-                                        <i class="fas fa-calendar-alt"></i>
-                                        <input type="text" id="datepicker" data-language='en'
-                                            data-date-format="yyyy/mm/dd" value="2022/04/01">
-                                    </div>
-                                </div>
-                                <div class="common_btn_wrap">
-                                    <a href="reserve.html?editComplete=true" class="common_btn edit_btn">変更</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                <div class="condition_wrap">
+                    <a href="reserve_add.html" class="reserve_add_link">
+                        ＋お手本追加</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>アップロード日時</th>
+                        <th>表示</th>
+                        <th>ダウンロード</th>
+                        <th>削除</th>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>2022/4/01</td>
+                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </td>
+                        <td><a href="" class="download_btn">ダウンロード</a></td>
+                        <td><button class="cancel_btn">削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>2022/4/01</td>
+                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
+                                    class="fas fa-external-link-alt"></i></a>
+                        <td><a href="" class="download_btn">ダウンロード</a></td>
+                        <td><button class="cancel_btn">削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>2022/4/01</td>
+                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
+                                    class="fas fa-external-link-alt"></i></a>
+                        <td><a href="" class="download_btn">ダウンロード</a></td>
+                        <td><button class="cancel_btn">削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>2022/4/01</td>
+                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
+                                    class="fas fa-external-link-alt"></i></a>
+                        <td><a href="" class="download_btn">ダウンロード</a></td>
+                        <td><button class="cancel_btn">削除</button></td>
+                    </tr>
+                    <tr>
+                        <td>2022/4/01</td>
+                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
+                                    class="fas fa-external-link-alt"></i></a>
+                        <td><a href="" class="download_btn">ダウンロード</a></td>
+                        <td><button class="cancel_btn">削除</button></td>
+                    </tr>
+                </table>
+                <ul class="pagination">
+                    <li><a href=""><i class="fas fa-angle-left"></i></a></li>
+                    <li class="active"><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href=""><i class="fas fa-angle-right"></i></a></li>
+                </ul>
             </div>
         </section>
     </main>
