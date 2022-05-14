@@ -55,7 +55,7 @@ body {
 .contents_link_wrap {
   display: flex;
   justify-content: space-between;
-  width: 480px;
+  width: 600px;
 }
 
 .contents_link_wrap li {

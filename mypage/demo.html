@@ -22,16 +22,13 @@
     <!-- Modal -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
-    <!-- datepicker -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css">
-
     <!-- css -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mypage/modal.css">
     <link rel="stylesheet" href="../css/mypage/mypage.css">
-    <link rel="stylesheet" href="../css/admin/admin.css">
     <link rel="stylesheet" href="../css/reserve_list.css">
-    <link rel="stylesheet" href="../css/admin/reserve.css">
+    <link rel="stylesheet" href="../css/mypage/top.css">
 </head>
 
 <body>
@@ -50,7 +47,7 @@
                 </div>
             </div>
             <div class="mypage_header_account">
-                <p>ページ管理者</p>
+                <p>山田太郎さん</p>
                 <a href="../login.html">ログアウト</a>
             </div>
         </div>
@@ -62,30 +59,33 @@
         <section>
             <div class="contents_link_wrap">
                 <li>
-                    <a href="member.html">アカウント管理</a>
-                </li>
-                <li>
-                    <a href="account.html">アカウント発行</a>
+                    <a href="top.html">トップ</a>
                 </li>
                 <li class="active">
-                    <a href="reserve.html">予約管理</a>
+                    <a href="demo.html">お手本</a>
                 </li>
                 <li>
-                    <a href="schedule.html">予約枠調整</a>
+                    <a href="reserve.html">レッスン予約</a>
+                </li>
+                <li>
+                    <a href="member_detail.html">会員情報</a>
+                </li>
+                <li>
+                    <a href="password_change.html">パスワード変更</a>
                 </li>
             </div>
             <div class="content_title_wrap">
-                <h3>予約管理</h3>
+                <h3>トップ</h3>
             </div>
         </section>
 
-        <!-- レッスン予約 -->
+        <!-- 予約一覧 -->
         <section>
             <div class="success_alert">
                 <div class="alert_inner">
                     <div class="alert_left">
                         <i class="fas fa-check-circle"></i>
-                        <p>予約の更新が完了しました。</p>
+                        <p>予約のキャンセルが完了しました。</p>
                     </div>
                     <div class="alert_right">
                         <i class="fas fa-times alert_delete"></i>
@@ -96,14 +96,6 @@
                 <h4 class="content_sub_title">
                     予約一覧
                 </h4>
-                <div class="condition_wrap">
-                    <label for="">レッスン日時</label>
-                    <i class="fas fa-calendar-alt"></i>
-                    <input type="text" id="datepicker" data-language='en' data-date-format="yyyy/mm/dd"> <a
-                        href="reserve.html" class="search_btn_small edit_btn">検索</a>
-                    <a href="reserve_add.html" class="reserve_add_link">
-                        ＋予約追加</a>
-                </div>
                 <table>
                     <tr>
                         <th>予約番号</th>
@@ -115,35 +107,35 @@
                 </table>
                 <table>
                     <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
+                        <td>00000001</td>
                         <td>2022/4/01 10:30</td>
-                        <td><a>https://xxx.co.jp</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
-                    </tr>
-                    <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><a>https://xxx.co.jp</a></td>
+                        <td class="zoom_link">https://xxx.co.jp</td>
                         <td>2022/4/01 10:30</td>
                         <td><button class="cancel_btn">キャンセル</button></td>
                     </tr>
                     <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
+                        <td>00000001</td>
                         <td>2022/4/01 10:30</td>
-                        <td><a>https://xxx.co.jp</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
-                    </tr>
-                    <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
-                        <td>2022/4/01 10:30</td>
-                        <td><a>https://xxx.co.jp</a></td>
+                        <td class="zoom_link">https://xxx.co.jp</td>
                         <td>2022/4/01 10:30</td>
                         <td><button class="cancel_btn">キャンセル</button></td>
                     </tr>
                     <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
+                        <td>00000001</td>
+                        <td>2022/4/01 10:30</td>
+                        <td class="zoom_link">https://xxx.co.jp</td>
+                        <td>2022/4/01 10:30</td>
+                        <td><button class="cancel_btn">キャンセル</button></td>
+                    </tr>
+                    <tr>
+                        <td>00000001</td>
+                        <td>2022/4/01 10:30</td>
+                        <td class="zoom_link">https://xxx.co.jp</td>
+                        <td>2022/4/01 10:30</td>
+                        <td><button class="cancel_btn">キャンセル</button></td>
+                    </tr>
+                    <tr>
+                        <td>00000001</td>
                         <td>2022/4/01 10:30</td>
                         <td class="canceled">キャンセル済</td>
                         <td>2022/4/01 10:30</td>
@@ -155,9 +147,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><a href="reserve_edit.html">00000001</a></td>
+                        <td>00000001</td>
                         <td>2022/4/01 10:30</td>
-                        <td><a>https://xxx.co.jp</a></td>
+                        <td class="zoom_link">https://xxx.co.jp</td>
                         <td>2022/4/01 10:30</td>
                         <td><button class="cancel_btn">キャンセル</button></td>
                     </tr>
@@ -170,6 +162,21 @@
                     <li><a href=""><i class="fas fa-angle-right"></i></a></li>
                 </ul>
             </div>
+            <!-- キャンセル確認モーダル -->
+            <div id="reserveCancelModal" class="modal">
+                <div class="modal_inner">
+                    <div class="modal_header">
+                        予約キャンセル
+                    </div>
+                    <div class="modal_body">
+                        キャンセルしますか？
+                    </div>
+                    <div class="modal_footer">
+                        <a href="top.html?editComplete=true" class="modal_btn modal_danger_btn">はい</a>
+                        <a href="#" class="modal_btn modal_cancel_btn" rel="modal:close">いいえ</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -177,14 +184,8 @@
     <script src=" https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
         </script>
-
     <!-- jQuery Modal -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-    <!-- datepicker -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/datepicker.min.js"></script>
-
     <script src="../js/script.js"></script>
     <script src="../js/mypage.js"></script>
 </body>
