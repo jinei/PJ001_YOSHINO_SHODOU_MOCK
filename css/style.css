@@ -624,7 +624,11 @@ body {
 }
 
 .sub_firstview h3 {
-  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 80%;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-family: 'Yuji Syuku',
@@ -633,8 +637,14 @@ body {
   color: #ffffff;
   background-color: rgba(62, 19, 0, 0.8);
   letter-spacing: 1rem;
+  white-space: nowrap;
 }
 
+_::-webkit-full-page-media,
+_:future,
+:root .sub_firstview h3 {
+  padding-bottom: 3rem;
+}
 
 /*================================================
 
@@ -884,7 +894,7 @@ body {
   }
 
   .sub_firstview h3 {
-    padding: 5rem 7.5rem;
+    width: 45%;
     font-size: 2.4rem;
   }
 
