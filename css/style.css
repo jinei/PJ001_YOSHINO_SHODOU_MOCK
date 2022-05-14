@@ -482,13 +482,11 @@ body {
   margin: 8rem 0 0 0;
 }
 
-.img_slider_wrap img {
-  border-radius: 3px;
-}
-
 .img_slider img {
   width: 100%;
-  height: auto;
+  height: 240px;
+  border-radius: 3px;
+  object-fit: cover;
 }
 
 .img_slider .slick-slide {
