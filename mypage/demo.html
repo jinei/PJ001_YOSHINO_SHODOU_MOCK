@@ -27,8 +27,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mypage/modal.css">
     <link rel="stylesheet" href="../css/mypage/mypage.css">
-    <link rel="stylesheet" href="../css/reserve_list.css">
-    <link rel="stylesheet" href="../css/mypage/top.css">
+    <link rel="stylesheet" href="../css/table.css">
 </head>
 
 <body>
@@ -75,83 +74,54 @@
                 </li>
             </div>
             <div class="content_title_wrap">
-                <h3>トップ</h3>
+                <h3>お手本</h3>
             </div>
         </section>
 
         <!-- 予約一覧 -->
         <section>
-            <div class="success_alert">
-                <div class="alert_inner">
-                    <div class="alert_left">
-                        <i class="fas fa-check-circle"></i>
-                        <p>予約のキャンセルが完了しました。</p>
-                    </div>
-                    <div class="alert_right">
-                        <i class="fas fa-times alert_delete"></i>
-                    </div>
-                </div>
-            </div>
             <div class="content_wrap">
                 <h4 class="content_sub_title">
-                    予約一覧
+                    お手本一覧
                 </h4>
                 <table>
                     <tr>
-                        <th>予約番号</th>
-                        <th>レッスン日時</th>
-                        <th>ZoomURL</th>
-                        <th>予約受付日</th>
-                        <th>キャンセル</th>
+                        <th>アップロード日時</th>
+                        <th>表示</th>
+                        <th>ダウンロード</th>
                     </tr>
                 </table>
                 <table>
                     <tr>
-                        <td>00000001</td>
-                        <td>2022/4/01 10:30</td>
-                        <td class="zoom_link">https://xxx.co.jp</td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
-                    </tr>
-                    <tr>
-                        <td>00000001</td>
-                        <td>2022/4/01 10:30</td>
-                        <td class="zoom_link">https://xxx.co.jp</td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
-                    </tr>
-                    <tr>
-                        <td>00000001</td>
-                        <td>2022/4/01 10:30</td>
-                        <td class="zoom_link">https://xxx.co.jp</td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
-                    </tr>
-                    <tr>
-                        <td>00000001</td>
-                        <td>2022/4/01 10:30</td>
-                        <td class="zoom_link">https://xxx.co.jp</td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
-                    </tr>
-                    <tr>
-                        <td>00000001</td>
-                        <td>2022/4/01 10:30</td>
-                        <td class="canceled">キャンセル済</td>
-                        <td>2022/4/01 10:30</td>
-                        <td>
-                            <div class="cancel_date">
-                                <p>キャンセル</p>
-                                <p>2022/4/01 10:30</p>
-                            </div>
+                        <td>2022/4/01</td>
+                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
+                                    class="fas fa-external-link-alt"></i></a>
                         </td>
+                        <td><a href="" class="download_btn">ダウンロード</a></td>
                     </tr>
                     <tr>
-                        <td>00000001</td>
-                        <td>2022/4/01 10:30</td>
-                        <td class="zoom_link">https://xxx.co.jp</td>
-                        <td>2022/4/01 10:30</td>
-                        <td><button class="cancel_btn">キャンセル</button></td>
+                        <td>2022/4/01</td>
+                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
+                                    class="fas fa-external-link-alt"></i></a>
+                        <td><a href="" class="download_btn">ダウンロード</a></td>
+                    </tr>
+                    <tr>
+                        <td>2022/4/01</td>
+                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
+                                    class="fas fa-external-link-alt"></i></a>
+                        <td><a href="" class="download_btn">ダウンロード</a></td>
+                    </tr>
+                    <tr>
+                        <td>2022/4/01</td>
+                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
+                                    class="fas fa-external-link-alt"></i></a>
+                        <td><a href="" class="download_btn">ダウンロード</a></td>
+                    </tr>
+                    <tr>
+                        <td>2022/4/01</td>
+                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
+                                    class="fas fa-external-link-alt"></i></a>
+                        <td><a href="" class="download_btn">ダウンロード</a></td>
                     </tr>
                 </table>
                 <ul class="pagination">
@@ -161,21 +131,6 @@
                     <li><a href="">3</a></li>
                     <li><a href=""><i class="fas fa-angle-right"></i></a></li>
                 </ul>
-            </div>
-            <!-- キャンセル確認モーダル -->
-            <div id="reserveCancelModal" class="modal">
-                <div class="modal_inner">
-                    <div class="modal_header">
-                        予約キャンセル
-                    </div>
-                    <div class="modal_body">
-                        キャンセルしますか？
-                    </div>
-                    <div class="modal_footer">
-                        <a href="top.html?editComplete=true" class="modal_btn modal_danger_btn">はい</a>
-                        <a href="#" class="modal_btn modal_cancel_btn" rel="modal:close">いいえ</a>
-                    </div>
-                </div>
             </div>
         </section>
     </main>

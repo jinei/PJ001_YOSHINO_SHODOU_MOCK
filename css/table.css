@@ -45,13 +45,34 @@ td.canceled {
   font-weight: 900;
 }
 
-td .cancel_btn {
+td .cancel_btn,
+td .preview_btn,
+td .download_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 85%;
   height: 70%;
-  border-radius: 3px;
-  background-color: #AA3939;
   color: #ffffff;
+  border-radius: 3px;
   font-size: 1.4rem;
+}
+
+td .cancel_btn {
+  background-color: #AA3939;
+}
+
+td .preview_btn {
+  background-color: #6E8871;
+}
+
+td .download_btn {
+  background-color: #2A4773;
+}
+
+td .preview_btn i {
+  font-size: 1.4rem;
+  margin-left: 1rem;
 }
 
 td .cancel_date {
@@ -126,9 +147,16 @@ td .cancel_date p {
     font-size: 1.2rem;
   }
 
-  td .cancel_btn {
+  td .cancel_btn,
+  td .preview_btn,
+  td .download_btn {
     height: 55%;
     font-size: 1rem;
+  }
+
+  td .preview_btn i {
+    font-size: 1rem;
+    margin-left: .5rem;
   }
 }
 
