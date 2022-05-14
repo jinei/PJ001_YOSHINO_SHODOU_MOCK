@@ -100,12 +100,13 @@
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  width: 560px;
+  width: 480px;
+  background: rgba(255, 255, 255, .7);
+  border-radius: 5px;
 }
 
 .slider_logo_wrap img {
   width: 100%;
-  opacity: .5;
 }
 
 .slider_caption_img {
