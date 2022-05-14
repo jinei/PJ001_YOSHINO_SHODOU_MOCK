@@ -858,7 +858,7 @@ body {
   }
 
   .accrss_wrap picture {
-    width: 50%;
+    width: 100%;
   }
 
   .access_details {
@@ -893,6 +893,10 @@ body {
 
   .footer_inner img {
     width: 14rem;
+  }
+
+  .img_slider img {
+    height: 17rem;
   }
 }
 
