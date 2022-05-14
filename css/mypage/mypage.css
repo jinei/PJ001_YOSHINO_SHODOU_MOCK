@@ -20,7 +20,7 @@ body {
 }
 
 .mypage_header_logo_wrap img {
-  height: 100%;
+  width: 200px;
 }
 
 .mypage_header_title {
@@ -187,6 +187,13 @@ body {
 
 /* sp全般 */
 @media screen and (max-width: 600px) {
+
+  .mypage_header_logo_wrap picture,
+  .mypage_header_logo_wrap img {
+    width: inherit;
+    height: 100%;
+  }
+
   .mypage_header_wrap {
     position: fixed;
     margin: auto;
