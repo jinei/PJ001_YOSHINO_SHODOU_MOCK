@@ -30,8 +30,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/mypage/mypage.css">
     <link rel="stylesheet" href="../css/admin/admin.css">
-    <link rel="stylesheet" href="../css/table.css">
-    <link rel="stylesheet" href="../css/admin/reserve.css">
+    <link rel="stylesheet" href="../css/admin/reserve_add.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+
 </head>
 
 <body>
@@ -78,84 +80,44 @@
                 </li>
             </div>
             <div class="content_title_wrap">
-                <h3>予約管理</h3>
+                <h3>お手本アップロード</h3>
             </div>
         </section>
 
         <!-- レッスン予約 -->
         <section>
-            <div class="success_alert">
-                <div class="alert_inner">
-                    <div class="alert_left">
-                        <i class="fas fa-check-circle"></i>
-                        <p>お手本の追加が完了しました。</p>
-                    </div>
-                    <div class="alert_right">
-                        <i class="fas fa-times alert_delete"></i>
-                    </div>
-                </div>
-            </div>
             <div class="content_wrap">
                 <h4 class="content_sub_title">
-                    お手本一覧
+                    お手本追加
                 </h4>
-                <div class="condition_wrap">
-                    <a href="demo_add.html" class="reserve_add_link">
-                        ＋お手本追加</a>
-                </div>
-                <table>
-                    <tr>
-                        <th>アップロード日時</th>
-                        <th>表示</th>
-                        <th>ダウンロード</th>
-                        <th>削除</th>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>2022/4/01</td>
-                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </td>
-                        <td><a href="" class="download_btn">ダウンロード</a></td>
-                        <td><button class="cancel_btn">削除</button></td>
-                    </tr>
-                    <tr>
-                        <td>2022/4/01</td>
-                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
-                                    class="fas fa-external-link-alt"></i></a>
-                        <td><a href="" class="download_btn">ダウンロード</a></td>
-                        <td><button class="cancel_btn">削除</button></td>
-                    </tr>
-                    <tr>
-                        <td>2022/4/01</td>
-                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
-                                    class="fas fa-external-link-alt"></i></a>
-                        <td><a href="" class="download_btn">ダウンロード</a></td>
-                        <td><button class="cancel_btn">削除</button></td>
-                    </tr>
-                    <tr>
-                        <td>2022/4/01</td>
-                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
-                                    class="fas fa-external-link-alt"></i></a>
-                        <td><a href="" class="download_btn">ダウンロード</a></td>
-                        <td><button class="cancel_btn">削除</button></td>
-                    </tr>
-                    <tr>
-                        <td>2022/4/01</td>
-                        <td><a href="" class="preview_btn" target="_blank">プレビュー表示<i
-                                    class="fas fa-external-link-alt"></i></a>
-                        <td><a href="" class="download_btn">ダウンロード</a></td>
-                        <td><button class="cancel_btn">削除</button></td>
-                    </tr>
-                </table>
-                <ul class="pagination">
-                    <li><a href=""><i class="fas fa-angle-left"></i></a></li>
-                    <li class="active"><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href=""><i class="fas fa-angle-right"></i></a></li>
-                </ul>
+                <form action="">
+                    <div class="reserve_add_form_wrap">
+                        <div class="reserve_add_form_inner">
+                            <div class="member_form_body">
+                                <div class="reserve_add_form_input_element">
+                                    <label for="password">レッスン月</label>
+                                    <div class="select_wrap">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <select name="" id="">
+                                            <option value=""></option>
+                                            <option value="">山田太郎:yamadatarou@xxx.com</option>
+                                            <option value="">佐藤次郎:satoujirou@xxx.com</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="reserve_add_form_input_element">
+                                    <label for="password">ファイル</label>
+                                    <div class="select_wrap">
+                                        <input type="file" name="" id="">
+                                    </div>
+                                </div>
+                                <div class="common_btn_wrap">
+                                    <a href="demo_upload.html?editComplete=true" class="common_btn edit_btn">登録</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

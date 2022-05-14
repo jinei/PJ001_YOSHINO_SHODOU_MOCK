@@ -39,7 +39,7 @@
 }
 
 .reserve_add_form_input_element select,
-.reserve_add_form_input_element input {
+.reserve_add_form_input_element input:not(input[type="file"]) {
   width: 100%;
   height: 40px;
   border: 1px solid #D5D5D5;
@@ -48,6 +48,10 @@
   font-size: 1.6rem;
   width: 280px;
   margin-left: 40px;
+}
+
+input[type="file"] {
+  font-size: 1.4rem;
 }
 
 .reserve_add_form_input_element select:disabled {
