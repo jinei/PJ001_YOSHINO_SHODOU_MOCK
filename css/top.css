@@ -7,9 +7,13 @@
   height: 240px;
 }
 
+.top_header_wrap .top_header_logo_wrap {
+  display: flex;
+  align-items: center;
+}
+
 .top_header_wrap .top_header_logo {
   height: 70%;
-  margin: auto 0;
 }
 
 .top_header_menu_wrap {
@@ -128,13 +132,15 @@
   background-color: #3E1300;
 }
 
-.online_lesson_img,
+.online_lesson_img_wrap,
 .online_lesson_details {
   width: 50%;
 }
 
 .online_lesson_img {
   object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .online_lesson_details_inner {
