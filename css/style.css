@@ -503,8 +503,13 @@ body {
   width: 760px;
 }
 
-.accrss_wrap img {
+.accrss_wrap picture {
   width: 40%;
+}
+
+.accrss_wrap img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .access_details {
@@ -854,7 +859,7 @@ body {
     width: 80%;
   }
 
-  .accrss_wrap img {
+  .accrss_wrap picture {
     width: 50%;
   }
 
