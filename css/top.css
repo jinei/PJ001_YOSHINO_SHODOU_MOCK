@@ -10,10 +10,11 @@
 .top_header_wrap .top_header_logo_wrap {
   display: flex;
   align-items: center;
+  width: 20%;
 }
 
 .top_header_wrap .top_header_logo {
-  height: 70%;
+  width: 100%;
 }
 
 .top_header_menu_wrap {
