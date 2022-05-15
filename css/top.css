@@ -174,9 +174,9 @@
 }
 
 .online_lesson_details_inner p {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
   color: #ffffff;
 }
 
@@ -237,7 +237,7 @@
   font-family: 'Shippori Mincho B1',
     serif;
   z-index: 2;
-  color: #333333;
+  color: #3E1300;
 }
 
 .feature_elements p {
@@ -496,7 +496,7 @@
   .slider_wrap,
   .slider,
   .slider img {
-    height: 60vh;
+    height: 80vh;
   }
 
   .slider_logo_wrap {
@@ -512,9 +512,10 @@
   .about_content {
     font-size: 1.2rem;
     line-height: 2rem;
+    margin-top: 2.4rem;
   }
 
-  .online_lesson_img {
+  .online_lesson_img_wrap {
     display: none;
   }
 
@@ -539,7 +540,11 @@
   .feature_sub_title,
   .lesson_sub_title {
     font-size: 1.6rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
+  }
+
+  .lesson_card .mask {
+    display: none;
   }
 
   .feature_elements {
@@ -549,6 +554,10 @@
   .feature_elements_deails,
   .feature_elements_img {
     width: 100%;
+  }
+
+  .feature_elements h5 {
+    font-size: 1.6rem;
   }
 
   .feature_elements_img {
@@ -561,18 +570,19 @@
   }
 
   .feature_elements_img img {
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 22.5rem;
   }
 
   .feature_elements_img img,
   .feature_elements:nth-of-type(2) .feature_elements_img img,
   .feature_elements:nth-of-type(3) .feature_elements_img img {
-    filter: drop-shadow(0px 80px 0px #FFFFFF);
+    filter: drop-shadow(0px 50px 0px #FFFFFF);
   }
 
   .feature_elements p {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
   }
 
   .lesson_title,
@@ -593,17 +603,26 @@
 
   .lesson_details_wrap h5 {
     font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+
+  .lesson_details_wrap ul {
+    margin-top: 2rem;
   }
 
   .lesson_details_wrap li,
   .lesson_details_wrap p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+  }
+
+  .lesson_details_wrap p {
+    margin-top: 2rem;
   }
 
   .lesson_card_wrap {
     flex-direction: column;
-    width: 90%;
-    margin: 5rem auto 0 auto;
+    width: 85%;
+    margin: 0rem auto 0 auto;
   }
 
   .lesson_card {
@@ -612,11 +631,19 @@
     height: 40rem;
   }
 
-  .lesson_card h6 {
-    font-size: 1.6rem;
+  .lesson_card img {
+    height: 55%;
   }
 
-  .lesson_card p {
+  .lesson_card h6 {
+    margin: 2rem auto 1.4rem auto;
+    padding: 1.4rem 0;
+    font-size: 2rem;
+    border-top: 2px solid #333333;
+    border-bottom: 2px solid #333333;
+  }
+
+  .lesson_card small {
     font-size: 1.4rem;
   }
 
