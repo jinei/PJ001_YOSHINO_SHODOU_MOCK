@@ -47,7 +47,7 @@
 }
 
 table {
-  margin: 5rem auto 0 auto;
+  margin: 3rem auto 0 auto;
 }
 
 th {
@@ -57,13 +57,13 @@ th {
 }
 
 td {
-  height: 56px;
   background-color: #ffffff;
+  padding: 2rem 0;
 }
 
 th,
 td {
-  width: 240px;
+  width: 320px;
   text-align: center;
   vertical-align: middle;
   font-size: 1.6rem;
@@ -108,7 +108,21 @@ td {
   margin-top: 1rem;
   color: #FB2B2B;
   font-size: 1.4rem;
-  width: 720px;
+  line-height: 2rem;
+}
+
+.warning_note.small {
+  width: 640px;
+}
+
+.warning_note.large {
+  width: 960px;
+}
+
+td .warning_note {
+  margin-top: 0;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
 }
 
 .warning_note:first-of-type {
@@ -142,9 +156,11 @@ td {
   td {
     width: 30%;
     font-size: 1.4rem;
+    padding: 1rem 0;
   }
 
-  .warning_note {
+  .warning_note.small,
+  .warning_note.large {
     width: 100%;
   }
 
