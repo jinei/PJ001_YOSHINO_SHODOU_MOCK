@@ -102,16 +102,22 @@
   line-height: 2rem;
   margin-top: 2rem;
   opacity: .5;
+  font-family: 'Shippori Mincho B1',
+    serif;
 }
 
 .teacher_details p {
   margin-top: 2rem;
   font-size: 1.6rem;
   line-height: 3rem;
+  font-family: 'Shippori Mincho B1',
+    serif;
 }
 
 .teacher_details ul {
   margin-top: 2rem;
+  font-family: 'Shippori Mincho B1',
+    serif;
 }
 
 .teacher_details ul li::before {

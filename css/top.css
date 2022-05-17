@@ -247,12 +247,12 @@
 
 .feature_elements h5 {
   position: relative;
-  font-size: 2rem;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
   font-weight: 900;
   font-family: 'Shippori Mincho B1',
     serif;
   z-index: 2;
-  color: #3E1300;
 }
 
 .feature_elements p {
@@ -261,6 +261,8 @@
   font-size: 1.6rem;
   line-height: 2.4rem;
   z-index: 2;
+  font-family: 'Shippori Mincho B1',
+    serif;
 }
 
 .feature_elements_img {
@@ -271,14 +273,14 @@
   position: relative;
   width: 400px;
   height: 320px;
-  filter: drop-shadow(-240px 20px 0px #FCFCFC);
+  filter: drop-shadow(-240px 20px 0px #C6D2C8);
   border-radius: 50%;
   z-index: 1;
   object-fit: cover;
 }
 
 .feature_elements:nth-of-type(2) .feature_elements_img img {
-  filter: drop-shadow(240px 20px 0px #FCFCFC);
+  filter: drop-shadow(240px 20px 0px #C6D2C8);
 }
 
 .lesson_wrap {
@@ -592,7 +594,7 @@
   .feature_elements_img img,
   .feature_elements:nth-of-type(2) .feature_elements_img img,
   .feature_elements:nth-of-type(3) .feature_elements_img img {
-    filter: drop-shadow(0px 50px 0px #FFFFFF);
+    filter: drop-shadow(0px 50px 0px #C6D2C8);
   }
 
   .feature_elements p {
