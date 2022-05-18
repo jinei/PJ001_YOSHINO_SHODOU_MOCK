@@ -157,9 +157,10 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 10vh;
-  background: #FFFFFF;
+  height: 8vh;
+  background: #F6F6F6;
   z-index: 8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header_sp_logo_wrap {
@@ -177,7 +178,7 @@ body {
   margin-right: .75rem;
   z-index: 10;
   right: 0;
-  top: 1rem;
+  top: 0rem;
 }
 
 .header_sp_menu_btn {
@@ -194,7 +195,7 @@ body {
   transition: all .4s;
   position: absolute;
   left: 14px;
-  height: 3px;
+  height: 2px;
   border-radius: 5px;
   background: #3E1300;
   width: 50%;
@@ -280,6 +281,10 @@ body {
   flex-direction: column;
   height: 55vh;
   justify-content: space-between;
+}
+
+.sp_menu_inner li {
+  list-style: none;
 }
 
 .sp_menu_inner li a {
@@ -504,6 +509,7 @@ body {
 .accrss_wrap img {
   width: 100%;
   object-fit: cover;
+  border: 2px solid #DFDDDD;
 }
 
 .access_details {
@@ -796,6 +802,10 @@ _:future,
 /* sp全般 */
 @media screen and (max-width: 600px) {
 
+  body {
+    background-color: #FCFCFC;
+  }
+
   #splash img {
     width: 30rem;
   }
@@ -822,7 +832,9 @@ _:future,
   }
 
   .contact_wrap {
+    padding: 5rem 0;
     width: 100%;
+    background-color: #eae9e9;
   }
 
   .content_title {
@@ -831,9 +843,8 @@ _:future,
   }
 
   .contact_inner {
-    padding: 2.5rem 0;
     flex-direction: column;
-    background: #7e9580;
+    margin-top: 2rem;
   }
 
   .contact_element {
@@ -843,17 +854,18 @@ _:future,
   }
 
   .contact_element:not(.contact_element:first-of-type) {
-    border-top: 2px solid #ffffff;
+    border-top: 2px solid #333333;
     border-left: inherit;
   }
 
-  .contact_element h5,
   .contact_element a {
-    color: #ffffff;
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
   }
 
-  .contact_element a {
-    border: 2px solid #ffffff;
+  .contact_inner h5 {
+    font-size: 2rem;
   }
 
   .accrss_wrap {
