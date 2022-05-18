@@ -15,8 +15,8 @@
 body {
   background: #F6F6F6;
   color: #333333;
-  font-family: 'Shippori Antique B1',
-    sans-serif;
+  font-family: 'Shippori Mincho B1',
+    serif;
 }
 
 /*================================================
@@ -106,8 +106,6 @@ body {
 
 .header_link_text {
   margin-top: .25rem;
-  font-family: 'Shippori Mincho B1',
-    serif;
   font-size: 1.2rem;
   color: #CDBDB6;
 }
@@ -310,17 +308,15 @@ body {
 .content_title {
   position: relative;
   font-size: 3.2rem;
-  font-family: 'Yuji Syuku',
-    serif;
-  color: #3E1300;
   letter-spacing: .5rem;
+  font-weight: 900;
 }
 
 .content_sub_title {
   font-size: 2.4rem;
-  color: #3E1300;
   font-family: 'Yuji Syuku',
     serif;
+  color: #838383;
 }
 
 .content_title_border {
@@ -337,8 +333,8 @@ body {
 
 .common_link {
   width: 100%;
-  font-family: 'Yuji Syuku',
-    serif;
+  font-family: 'Shippori Antique B1',
+    sans-serif;
   font-size: 1.4rem;
   text-align: left;
   position: relative;
@@ -429,9 +425,8 @@ body {
 
 .contact_title {
   font-size: 2.4rem;
-  font-family: 'Shippori Mincho B1',
-    serif;
   text-align: center;
+  font-weight: 900;
 }
 
 .contact_inner {
@@ -455,8 +450,7 @@ body {
 
 .contact_element h5 {
   font-size: 2.4rem;
-  font-family: 'Yuji Syuku',
-    serif;
+  font-weight: 700;
 }
 
 .contact_element a {
@@ -465,11 +459,13 @@ body {
   align-items: center;
   margin-top: 2rem;
   width: 85%;
-  height: 6rem;
+  height: 6.5rem;
   border: 3px solid #333333;
   font-size: 2rem;
   color: #333333;
   transition: all 200ms;
+  font-weight: 00;
+  border-radius: 3px;
 }
 
 .contact_element a:hover {
@@ -515,11 +511,10 @@ body {
 }
 
 .access_details h6 {
-  font-family: 'Yuji Syuku',
-    serif;
   font-size: 2.4rem;
   padding-bottom: 1rem;
   border-bottom: 2px solid #CECECE;
+  font-weight: 700;
 }
 
 .access_details_elements {
@@ -531,6 +526,7 @@ body {
 .access_details_elements p {
   width: 50%;
   font-size: 1.6rem;
+  font-weight: 500;
 }
 
 /*================================================
@@ -817,7 +813,7 @@ _:future,
   }
 
   .content_title_border {
-    width: 90%;
+    display: none;
   }
 
   .content_wrap {
@@ -830,14 +826,14 @@ _:future,
   }
 
   .content_title {
-    font-size: 2rem;
+    font-size: 2.4rem;
     letter-spacing: .25rem;
   }
 
   .contact_inner {
     padding: 2.5rem 0;
     flex-direction: column;
-    background: #3E1300;
+    background: #7e9580;
   }
 
   .contact_element {
@@ -908,6 +904,10 @@ _:future,
 
   .img_slider img {
     height: 17rem;
+  }
+
+  .footer_wrap {
+    background-attachment: inherit;
   }
 }
 
