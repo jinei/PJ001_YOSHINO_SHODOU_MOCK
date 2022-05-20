@@ -509,7 +509,7 @@ body {
 .accrss_wrap img {
   width: 100%;
   object-fit: cover;
-  border: 2px solid #DFDDDD;
+  border: 1px solid #DFDDDD;
 }
 
 .access_details {
@@ -519,7 +519,7 @@ body {
 .access_details h6 {
   font-size: 2.4rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #CECECE;
+  border-bottom: 1px solid #CECECE;
   font-weight: 700;
 }
 
@@ -834,7 +834,7 @@ _:future,
   .contact_wrap {
     padding: 5rem 0;
     width: 100%;
-    background-color: #eae9e9;
+    background-color: #f2f1f1;
   }
 
   .content_title {
@@ -859,7 +859,6 @@ _:future,
   }
 
   .contact_element a {
-    background-color: #fff;
     font-size: 1.6rem;
     font-weight: 700;
   }

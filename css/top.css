@@ -545,6 +545,23 @@
     font-weight: 700;
   }
 
+  .online_lesson_details .common_link_wrap {
+    width: 100%;
+  }
+
+  .online_lesson_details .common_link {
+    padding-left: inherit;
+    text-align: center;
+  }
+
+  .online_lesson_details .common_link::before {
+    left: 10%;
+  }
+
+  .online_lesson_details .common_link::after {
+    right: 5%;
+  }
+
   .feature_title,
   .feature_sub_title {
     float: inherit;
@@ -632,6 +649,7 @@
   .lesson_details_wrap li,
   .lesson_details_wrap p {
     font-size: 1.2rem;
+    font-weight: 700;
   }
 
   .lesson_details_wrap p {
