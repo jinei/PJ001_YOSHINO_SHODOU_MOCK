@@ -525,14 +525,22 @@ body {
 
 .access_details_elements {
   display: flex;
-  width: 80%;
+  width: 85%;
   margin-top: 2rem;
 }
 
 .access_details_elements p {
-  width: 50%;
   font-size: 1.6rem;
   font-weight: 500;
+  line-height: 2.4rem;
+}
+
+.access_details_elements p:first-of-type {
+  width: 40%;
+}
+
+.access_details_elements p:nth-of-type(2) {
+  width: 60%;
 }
 
 /*================================================
