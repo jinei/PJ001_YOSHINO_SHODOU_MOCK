@@ -915,6 +915,7 @@ _:future,
 
   .content_sub_title {
     font-size: 1.6rem;
+    margin-top: .5rem;
   }
 
   .footer_inner img {

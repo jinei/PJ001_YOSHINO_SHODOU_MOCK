@@ -172,6 +172,7 @@
   .greeting_title_wrap h4::before,
   .greeting_title_wrap h4::after {
     width: 10rem;
+    height: 1px;
   }
 
   .greeting_title_wrap h4::before {
@@ -182,21 +183,28 @@
     left: 6rem;
   }
 
-  .greeting_body p {
-    font-size: 1.4rem;
-  }
-
   .greeting_body_wrap {
     width: 95%;
   }
 
   .greeting_body p {
+    font-size: 1.4rem;
     line-height: 2rem;
+    font-weight: 700;
   }
 
   .teacher_details_wrap {
     margin-top: 5rem;
     flex-direction: column;
+  }
+
+  .teacher_details {
+    order: 2;
+    margin-top: 3rem;
+  }
+
+  .teacher_details_wrap picture {
+    order: 1;
   }
 
   .teacher_details,
@@ -209,17 +217,21 @@
   }
 
   .teacher_details h5 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
-  .teacher_details h6,
+  .teacher_details h6 {
+    font-size: 1.4rem;
+  }
+
   .teacher_details p {
     font-size: 1.2rem;
-    line-height: 2.4rem;
+    line-height: 2rem;
   }
 
   .teacher_details p {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
   }
 
   .teacher_details ul {
@@ -240,7 +252,21 @@
   }
 
   .teacher_details small {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .teacher_wrap .common_link_wrap .common_link {
+    padding-left: inherit;
+    text-align: center;
+  }
+
+  .teacher_wrap .common_link_wrap .common_link::before {
+    left: 8%;
+  }
+
+  .teacher_wrap .common_link_wrap .common_link::after {
+    right: 7%;
   }
 }
