@@ -193,7 +193,8 @@ body {
 @media screen and (max-width: 600px) {
 
   .mypage_header_logo_wrap picture,
-  .mypage_header_logo_wrap img {
+  .mypage_header_logo_wrap img,
+  .mypage_header_logo_wrap a {
     width: inherit;
     height: 100%;
   }
