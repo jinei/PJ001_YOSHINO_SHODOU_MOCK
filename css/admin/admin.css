@@ -5,3 +5,9 @@
 .contents_link_wrap {
   width: 680px;
 }
+
+@media screen and (max-width: 600px) {
+  .contents_link_wrap {
+    width: 100%;
+  }
+}

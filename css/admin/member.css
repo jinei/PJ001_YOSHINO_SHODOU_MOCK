@@ -194,8 +194,10 @@ td .stop_btn {
   }
 
   th,
-  td {
-    font-size: 1.2rem;
+  td,
+  td .recovery_btn,
+  td .stop_btn {
+    font-size: 1rem;
   }
 
   td .cancel_btn {
