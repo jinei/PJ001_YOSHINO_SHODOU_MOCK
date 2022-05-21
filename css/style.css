@@ -815,6 +815,10 @@ _:future,
   .footer_wrap {
     background-attachment: inherit;
   }
+
+  .sp_menu_inner {
+    height: 80vh;
+  }
 }
 
 /* sp全般 */

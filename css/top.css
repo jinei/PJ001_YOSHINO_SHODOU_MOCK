@@ -545,6 +545,8 @@
 
   .lesson_card {
     padding: 0 0 4rem 0;
+    width: 31%;
+    height: inherit;
   }
 
   .lesson_card h6 {
