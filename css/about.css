@@ -53,6 +53,7 @@
   width: 100%;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+  white-space: nowrap;
 }
 
 .greeting_body p {
@@ -161,6 +162,42 @@
     font-size: 1.4rem;
   }
 }
+
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {
+  .greeting_title_wrap h4 {
+    font-size: 2rem;
+  }
+
+  .greeting_body p {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .teacher_details h5 {
+    font-size: 2rem;
+  }
+
+  .teacher_details p,
+  .teacher_details small,
+  .teacher_details ul li {
+    font-size: 1.2rem;
+  }
+
+  .teacher_wrap .common_link_wrap .common_link {
+    text-align: center;
+    padding-left: inherit;
+  }
+
+  .common_link::before {
+    left: 7.5%;
+  }
+
+  .common_link::after {
+    right: 7.5%;
+  }
+}
+
 
 /* sp全般 */
 @media screen and (max-width: 600px) {
