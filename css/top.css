@@ -249,7 +249,7 @@
   position: relative;
   margin-top: 3rem;
   font-size: 1.6rem;
-  line-height: 2.4rem;
+  line-height: 3.2rem;
   z-index: 2;
 }
 
@@ -556,6 +556,7 @@
   .lesson_card p {
     font-size: 1.2rem;
   }
+
 }
 
 /* sp全般 */
