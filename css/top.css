@@ -501,8 +501,7 @@
   }
 
   .feature_title,
-  .feature_sub_title,
-    {
+  .feature_sub_title {
     float: inherit;
     -ms-writing-mode: inherit;
     writing-mode: inherit;
@@ -535,16 +534,18 @@
 
   .lesson_card {
     padding: 0 0 4rem 0;
-    width: 31%;
+    width: 23%;
     height: inherit;
   }
 
   .lesson_card h6 {
-    font-size: 1.4rem;
+    width: 80%;
+    padding: .5rem 0;
+    font-size: 1.2rem;
   }
 
   .lesson_card p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
 }
