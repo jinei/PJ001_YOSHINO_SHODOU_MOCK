@@ -93,10 +93,6 @@
   overflow: hidden;
 }
 
-.slider img {
-  filter: brightness(80%);
-}
-
 @keyframes fadezoom {
   0% {
     transform: scale(1);
