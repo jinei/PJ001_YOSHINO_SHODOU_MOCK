@@ -269,24 +269,19 @@
 
 .lesson_wrap {
   margin-top: 20rem;
+  padding: 7.5rem 0;
+  width: 100%;
+  background-color: #b2c6b2;
 }
 
-.lesson_title {
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  float: left;
-}
-
-.lesson_sub_title {
-  margin-top: 16rem;
-  float: left;
-  transform: rotate(90deg);
+.lesson_wrap .content_title,
+.lesson_wrap .content_sub_title {
+  text-align: center;
+  color: #ffffff;
 }
 
 .lesson_details_wrap {
-  position: relative;
-  top: 2.5rem;
-  left: 10rem;
+  margin-top: 10rem;
 }
 
 .lesson_details_wrap h5 {
@@ -316,22 +311,22 @@
 .lesson_card_wrap {
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  max-width: 1350px;
-  margin: 15rem auto 0 auto;
+  width: 95%;
+  /* max-width: 1350px; */
+  margin: 7.5rem auto 0 auto;
 }
 
 .lesson_card {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 23%;
+  height: 360px;
   background: #FFFFFF;
   border-radius: 2px;
   text-align: center;
   transition: all 1s;
 }
 
-.lesson_card::before {
+/* .lesson_card::before {
   content: '';
   position: absolute;
   left: 0;
@@ -339,12 +334,12 @@
   width: 48px;
   height: 160px;
   background-image: url('../img/lesson_details.png');
-}
+} */
 
 .lesson_card img {
   margin-top: 1.5rem;
   width: 90%;
-  height: 65%;
+  height: 60%;
   object-fit: cover;
   border-radius: 2px;
 }
@@ -507,8 +502,7 @@
 
   .feature_title,
   .feature_sub_title,
-  .lesson_title,
-  .lesson_sub_title {
+    {
     float: inherit;
     -ms-writing-mode: inherit;
     writing-mode: inherit;
@@ -688,13 +682,6 @@
     margin-top: 2rem;
     font-size: 1.4rem;
     font-weight: 700;
-  }
-
-  .lesson_title,
-  .lesson_sub_title {
-    text-align: center;
-    writing-mode: inherit;
-    float: inherit;
   }
 
   .lesson_sub_title {
