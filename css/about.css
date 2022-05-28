@@ -3,63 +3,58 @@
 }
 
 .greeting_wrap {
-  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 95%;
+  height: 560px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #333333;
 }
 
 .greeting_title_wrap {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .greeting_title_wrap h4 {
   position: relative;
+  right: 7.5rem;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-family: 'Yuji Syuku',
     serif;
   font-size: 3.6rem;
   letter-spacing: 1rem;
-  color: #3E1300;
-}
-
-.greeting_title_wrap h4::before,
-.greeting_title_wrap h4::after {
-  position: absolute;
-  top: 50%;
-  content: '';
-  width: 160px;
-  height: 2px;
-  background-color: #CDCDCD;
-}
-
-.greeting_title_wrap h4::before {
-  right: 8rem;
-}
-
-.greeting_title_wrap h4::after {
-  left: 8rem;
+  color: #333;
 }
 
 .greeting_body_wrap {
   margin: 5rem auto 0 auto;
-  width: 480px;
+  width: 100%;
 }
 
 .greeting_body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
+  height: 50%;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  white-space: nowrap;
 }
 
 .greeting_body p {
-  font-size: 1.6rem;
+  display: flex;
+  font-size: 1.4rem;
   letter-spacing: 1rem;
-  line-height: 3rem;
+  line-height: 3.6rem;
+  font-weight: 700;
+  color: #333;
+  margin-right: 10%;
 }
 
 .teacher_wrap {
@@ -145,6 +140,20 @@
 
 /* タブレット（全般） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
+  .greeting_wrap {
+    height: 640px;
+  }
+
+  .greeting_title_wrap h4 {
+    right: 2.5rem;
+    font-size: 2rem;
+  }
+
+  .greeting_body p {
+    font-size: 1rem;
+    margin-right: 5%;
+  }
+
   .teacher_details p {
     font-size: 1.6rem;
   }
@@ -202,7 +211,14 @@
 /* sp全般 */
 @media screen and (max-width: 600px) {
 
+  .greeting_wrap {
+    flex-direction: column;
+    height: inherit;
+    padding: 3rem 0;
+  }
+
   .greeting_title_wrap h4 {
+    right: inherit;
     font-size: 2.4rem;
   }
 
@@ -221,13 +237,22 @@
   }
 
   .greeting_body_wrap {
-    width: 95%;
+    width: 85%;
+    margin: auto;
+  }
+
+  .greeting_title_wrap h4,
+  .greeting_body {
+    writing-mode: inherit;
+    height: inherit;
   }
 
   .greeting_body p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 2rem;
     font-weight: 700;
+    margin-right: inherit;
+    margin-top: 3rem;
   }
 
   .teacher_details_wrap {
