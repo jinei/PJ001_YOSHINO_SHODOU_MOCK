@@ -404,10 +404,19 @@ body {
   border-radius: 3px;
 }
 
+.line_qr_fix_wrap .line_qrbox {
+  height: 180px;
+  border: 5px solid #FBFFFA;
+}
+
 .line_qrbox p {
   font-size: 1.2rem;
   color: #ffffff;
   margin-top: 2rem;
+}
+
+.line_qr_fix_wrap .line_qrbox picture {
+  width: 65%;
 }
 
 .line_qrbox picture {
