@@ -1,0 +1,72 @@
+.content_title {
+  text-align: center;
+}
+
+.privacy_policy {
+  padding-top: 25vh;
+}
+
+.privacy_policy_body {
+  margin: 7vh auto 0 auto;
+  width: 50%;
+}
+
+.privacy_policy_body p {
+  font-size: 1.6rem;
+  line-height: 24px;
+  margin-top: 3vh;
+}
+
+.privacy_policy_body h2 {
+  font-size: 2.4rem;
+  border-bottom: 3px solid #6E8871;
+  padding: 8px 4px;
+  margin-top: 7vh;
+  font-weight: 700;
+}
+
+.privacy_policy_body ul {
+  margin-top: 3%;
+  padding-left: 5%;
+}
+
+.privacy_policy_body ul li {
+  font-size: 1.4rem;
+  margin-top: 1.5%;
+}
+
+.privacy_policy_body a {
+  font-size: 1.6rem;
+}
+
+/* sp タブレット */
+@media screen and (max-width: 1024px) {
+  .article_title {
+    font-size: 3.6rem;
+  }
+
+  .privacy_policy_body {
+    margin: 5vh auto 0 auto;
+    width: 90%;
+  }
+
+  .privacy_policy_body h2 {
+    font-size: 1.8rem;
+  }
+
+  .privacy_policy_body p,
+  .privacy_policy_body a {
+    font-size: 1.2rem;
+  }
+
+  .privacy_policy_body ul li {
+    font-size: 1rem;
+  }
+}
+
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {
+  .privacy_policy_body h2 {
+    margin-top: 15vh;
+  }
+}
