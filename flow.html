@@ -132,6 +132,76 @@
             </div>
         </section>
 
+        <!-- guide button -->
+        <section>
+            <p class="guide_content">
+                各種レッスンの入会からご利用までの手順をご案内します。<br>
+                その他ご不明点はお問い合わせフォーム・公式LINEにてお問い合わせくださいませ。
+            </p>
+            <div class="lesson_type_button_wrap">
+                <button id="online_lesson_button" class="lesson_type_button active"
+                    data-target="online_lesson_flow">オンラインレッスン</button>
+                <button id="other_lesson_button" class="lesson_type_button" data-target="other_lesson_flow">LINEレッスン /
+                    通信レッスン / 明野教室</button>
+            </div>
+
+            <!-- online lesson flow -->
+            <div class="lesson_flow_wrap" id="online_lesson_flow">
+                <div class="lesson_step">
+                    <div class="lesson_step_inner">
+                        <h4>1.ショップページにてサブスク契約！</h4>
+                        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+                    </div>
+                </div>
+                <div class="next_step">
+                    <i class="fas fa-sort-down"></i>
+                </div>
+                <div class="lesson_step">
+                    <div class="lesson_step_inner">
+                        <h4>2.オンラインレッスン用のアカウントを発行！</h4>
+                        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+                    </div>
+                </div>
+                <div class="next_step">
+                    <i class="fas fa-sort-down"></i>
+                </div>
+                <div class="lesson_step">
+                    <div class="lesson_step_inner">
+                        <h4>3.ログイン後、カレンダーにてレッスン予約！</h4>
+                        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- other lesson flow-->
+            <div class="lesson_flow_wrap" id="other_lesson_flow">
+                <div class="lesson_step">
+                    <div class="lesson_step_inner">
+                        <h4>1.LINE公式アカウント・またはお問い合わせフォームからお問い合わせ！</h4>
+                        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+                    </div>
+                </div>
+                <div class="next_step">
+                    <i class="fas fa-sort-down"></i>
+                </div>
+                <div class="lesson_step">
+                    <div class="lesson_step_inner">
+                        <h4>2.入会手続き</h4>
+                        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+                    </div>
+                </div>
+                <div class="next_step">
+                    <i class="fas fa-sort-down"></i>
+                </div>
+                <div class="lesson_step">
+                    <div class="lesson_step_inner">
+                        <h4>3.レッスン開始！</h4>
+                        <p>テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- contact -->
         <section>
             <div class="contact_wrap fadeInTrigger">
@@ -295,6 +365,15 @@
     <script type="text/javascript" src="js/slick.min.js"></script>
 
     <script src="js/script.js"></script>
+    <script>
+        $(document).on("click", ".lesson_type_button:not(.active)", function () {
+            $('.lesson_type_button').toggleClass('active');
+            $('.lesson_flow_wrap').hide();
+            const targetId = $(this).data('target');
+            const target = $('#' + targetId);
+            target.show();
+        });
+    </script>
 </body>
 
 </html>

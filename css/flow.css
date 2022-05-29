@@ -1,3 +1,93 @@
 .sub_firstview {
   background-image: url('../img/fv_flow.jpg');
 }
+
+.guide_content {
+  margin-top: 7.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+.lesson_type_button_wrap,
+.lesson_flow_wrap {
+  width: 1000px;
+  margin: auto;
+}
+
+.lesson_type_button_wrap {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lesson_type_button {
+  width: 45%;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #6E8871;
+  background-color: #FFFFFF;
+  border: 2px solid #6E8871;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lesson_type_button.active {
+  color: #ffffff;
+  background-color: #6E8871;
+  cursor: inherit;
+}
+
+.lesson_flow_wrap {
+  margin-top: 10rem;
+  padding: 10rem 0;
+  background-color: #B2C6B2;
+}
+
+.lesson_step {
+  margin: auto;
+  padding: 4rem 0;
+  width: 60%;
+  color: #6E8871;
+  background-color: #ffffff;
+  font-weight: 900;
+}
+
+.lesson_step_inner {
+  margin-left: 2rem;
+  width: 70%;
+}
+
+.lesson_step_inner h4 {
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  border-bottom: 2px solid #6E8871;
+}
+
+.lesson_step_inner p {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+}
+
+.next_step {
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15rem;
+  color: #6E8871;
+}
+
+.next_step i {
+  line-height: 0;
+  padding-bottom: 4rem;
+}
+
+#other_lesson_flow {
+  display: none;
+}
