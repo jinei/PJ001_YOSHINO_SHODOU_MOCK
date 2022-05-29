@@ -428,7 +428,12 @@
   }
 
   .top_header_form_wrap a {
-    width: 22vw;
+    width: 20vw;
+  }
+
+  .top_header_form_wrap a,
+  .top_header_form_wrap i {
+    font-size: 1.2rem;
   }
 
   .line_qrbox {
@@ -440,9 +445,15 @@
     right: 5rem;
   }
 
+  .feature_elements_deails,
+  .feature_elements_img {
+    width: 47.5%;
+  }
+
   .feature_elements_img img {
-    width: 100%;
+    width: 30rem;
     height: 25rem;
+    filter: drop-shadow(-140px 20px 0px #EEEEEE);
   }
 
   .lesson_details_wrap {
@@ -450,30 +461,32 @@
   }
 
   .lesson_card_wrap {
-    width: 95%;
+    width: 80%;
+    flex-wrap: wrap;
   }
 
   .lesson_card {
-    width: 24%;
-    height: 32.5vw;
+    margin-top: 5rem;
+    width: 45%;
+    height: 35rem;
   }
 
   .lesson_card h6 {
-    padding: .5rem 0;
+    padding: 1rem 0;
     width: 80%;
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   .lesson_card p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .lesson_card small {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .lesson_card img {
-    height: 55%;
+    height: 60%;
   }
 }
 
@@ -598,8 +611,12 @@
 
   .online_lesson_wrap {
     flex-direction: column;
-    height: 45vh;
+    height: 55vh;
     border-radius: 5px;
+  }
+
+  .online_lesson_img_wrap {
+    background-color: #3E1300;
   }
 
   .online_lesson_img_wrap,
@@ -784,4 +801,8 @@
 }
 
 /* sp（iPhone SE） */
-@media screen and (width: 320px) {}
+@media screen and (max-width: 375px) {
+  .lesson_card h6 {
+    font-size: 1.8rem;
+  }
+}
