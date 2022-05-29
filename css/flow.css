@@ -196,3 +196,15 @@
     line-height: 2.4rem;
   }
 }
+
+/* sp（iPhone SE） */
+@media screen and (max-width: 375px) {
+
+  .guide_content {
+    font-size: 1.2rem;
+  }
+
+  .lesson_type_button {
+    width: 90%;
+  }
+}
