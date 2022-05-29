@@ -147,6 +147,17 @@ td .warning_note {
   margin-left: .25rem;
 }
 
+/* タブレット（全般） */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .lesson_title {
+    width: 40%;
+  }
+
+  .warning_note.large {
+    width: 100%;
+  }
+}
+
 /* sp（横向き） */
 @media screen and (max-width: 926px) and (orientation: landscape) {
 
@@ -170,6 +181,10 @@ td .warning_note {
   .warning_note {
     font-weight: 900;
     font-size: 1rem;
+  }
+
+  .warning_note.large {
+    width: 100%;
   }
 
   .warning_note.small {
@@ -262,5 +277,41 @@ td .warning_note {
   .guide_button i {
     right: 1.5rem;
     font-size: 1.4rem;
+  }
+}
+
+/* sp（iPhone SE） */
+@media screen and (max-width: 375px) {
+
+  .lesson_title {
+    width: 80%;
+    font-size: 2rem;
+  }
+
+  .lesson_caption,
+  .lesson_caption a {
+    font-size: 1.2rem;
+  }
+
+  th,
+  td {
+    font-size: 1rem;
+    padding: .75rem 0;
+  }
+
+  .warning_note {
+    font-size: 1rem;
+  }
+
+  .option_title {
+    font-size: 1.2rem;
+  }
+
+  .content_wrap {
+    width: 90%;
+  }
+
+  .lesson_demo {
+    font-size: 1rem;
   }
 }
