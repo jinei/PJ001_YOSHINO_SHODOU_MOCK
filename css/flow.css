@@ -136,6 +136,14 @@
   .lesson_type_button {
     font-size: 1.4rem;
   }
+
+  .lesson_step {
+    width: 50%;
+  }
+
+  .lesson_step_inner {
+    width: 80%;
+  }
 }
 
 /* sp全般 */
