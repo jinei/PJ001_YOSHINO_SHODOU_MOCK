@@ -844,6 +844,23 @@ _:future,
   .sp_menu_inner {
     height: 80vh;
   }
+
+  .contact_title,
+  .contact_inner h5,
+  .contact_element a {
+    color: #333333;
+    font-weight: 700;
+  }
+
+  .contact_wrap {
+    padding: 5rem 0;
+    width: 100%;
+    background-color: #f2f1f1;
+  }
+
+  .contact_element:not(.contact_element:first-of-type) {
+    border-left: 2px solid #DFDDDD;
+  }
 }
 
 /* sp全般 */
@@ -884,6 +901,12 @@ _:future,
     background-color: #f2f1f1;
   }
 
+  .contact_title,
+  .contact_inner h5,
+  .contact_element a {
+    color: #333333;
+  }
+
   .content_title {
     font-size: 2.4rem;
     letter-spacing: .25rem;
@@ -908,6 +931,7 @@ _:future,
   .contact_element a {
     font-size: 1.6rem;
     font-weight: 700;
+    border: 3px solid #333333;
   }
 
   .contact_inner h5 {
@@ -920,6 +944,11 @@ _:future,
 
   .accrss_wrap {
     width: 80%;
+  }
+
+  .accrss_wrap img {
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border: none;
   }
 
   .accrss_wrap picture {
