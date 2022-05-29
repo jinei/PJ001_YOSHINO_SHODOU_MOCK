@@ -24,7 +24,7 @@
 
 .lesson_type_button {
   width: 45%;
-  padding: 2rem 0;
+  padding: 2.5rem 0;
   text-align: center;
   font-size: 2rem;
   font-weight: 900;
@@ -66,6 +66,7 @@
   font-size: 2rem;
   font-weight: 900;
   border-bottom: 2px solid #6E8871;
+  line-height: 3rem;
 }
 
 .lesson_step_inner p {
@@ -90,4 +91,100 @@
 
 #other_lesson_flow {
   display: none;
+}
+
+/* タブレット（全般） */
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+
+  .lesson_type_button_wrap,
+  .lesson_flow_wrap {
+    width: 100%;
+  }
+
+  .lesson_type_button {
+    font-size: 1.6rem;
+  }
+
+  .lesson_type_button_wrap {
+    margin-top: 7.5rem;
+  }
+
+  .lesson_step {
+    width: 75%;
+  }
+
+  .lesson_step_inner h4 {
+    font-size: 1.6rem;
+  }
+
+  .lesson_step_inner p {
+    font-size: 1.2rem;
+  }
+}
+
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {
+  .guide_content {
+    margin-top: 5rem;
+    font-size: 1.2rem;
+  }
+
+  .lesson_type_button_wrap {
+    margin-top: 2.5rem;
+  }
+
+  .lesson_type_button {
+    font-size: 1.4rem;
+  }
+}
+
+/* sp全般 */
+@media screen and (max-width: 600px) {
+  .guide_content {
+    width: 90%;
+    margin: 5rem auto 0 auto;
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+  }
+
+  .lesson_type_button_wrap {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+  }
+
+  .lesson_type_button_wrap,
+  .lesson_flow_wrap {
+    width: 100%;
+  }
+
+  .lesson_type_button {
+    width: 80%;
+    padding: 1.5rem 0;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .lesson_flow_wrap {
+    margin-top: 5rem;
+    padding: 5rem 0;
+  }
+
+  .lesson_step {
+    width: 80%;
+  }
+
+  .lesson_step_inner {
+    width: 80%;
+  }
+
+  .lesson_step_inner h4 {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+  }
+
+  .lesson_step_inner p {
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+  }
 }
