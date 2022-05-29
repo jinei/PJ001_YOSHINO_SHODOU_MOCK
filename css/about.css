@@ -3,6 +3,7 @@
 }
 
 .greeting_wrap {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
@@ -10,6 +11,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.greeting_wrap::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-image: url('../img/simbole.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 25rem;
+  height: 25rem;
+  z-index: 1;
+  opacity: .2;
 }
 
 .greeting_title_wrap {
@@ -25,9 +44,9 @@
   writing-mode: vertical-rl;
   font-family: 'Yuji Syuku',
     serif;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   letter-spacing: 1rem;
-  color: #333;
+  color: #6E8871;
 }
 
 .greeting_body_wrap {
@@ -51,8 +70,9 @@
   letter-spacing: 1rem;
   line-height: 3.6rem;
   font-weight: 700;
-  color: #333;
+  color: #6E8871;
   margin-right: 10%;
+  z-index: 2;
 }
 
 .teacher_wrap {
