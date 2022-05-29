@@ -250,10 +250,15 @@
     margin-top: 5rem;
   }
 
+  .teacher_details_wrap {
+    margin: 5rem auto 0 auto;
+  }
+
   .teacher_details p,
   .teacher_details small,
   .teacher_details ul li {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    line-height: 2rem;
   }
 
   .common_link_wrap .common_link {
@@ -305,7 +310,7 @@
   }
 
   .greeting_body_wrap {
-    width: 85%;
+    width: 90%;
     margin: auto;
   }
 
@@ -400,5 +405,18 @@
 
   .common_link_wrap .common_link::after {
     right: 7%;
+  }
+}
+
+/* sp（iPhone SE） */
+@media screen and (max-width: 375px) {
+
+  .teacher_details_wrap picture {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .teacher_details_wrap {
+    width: 85%;
   }
 }

@@ -804,65 +804,6 @@ _:future,
 
 }
 
-/* sp（横向き） */
-@media screen and (max-width: 926px) and (orientation: landscape) {
-  .header_pc {
-    display: none;
-  }
-
-  .header_sp {
-    display: flex;
-    height: 13vh;
-  }
-
-  .header_sp_menu {
-    display: block;
-  }
-
-  .content_title {
-    font-size: 2.4rem;
-  }
-
-  .line_qr_fix_wrap {
-    display: none;
-  }
-
-  .sub_firstview {
-    height: 75vh;
-    margin-top: 13vh;
-  }
-
-  .sub_firstview,
-  .footer_wrap {
-    background-attachment: inherit;
-  }
-
-  .sub_firstview h3 {
-    font-size: 2rem;
-  }
-
-  .sp_menu_inner {
-    height: 80vh;
-  }
-
-  .contact_title,
-  .contact_inner h5,
-  .contact_element a {
-    color: #333333;
-    font-weight: 700;
-  }
-
-  .contact_wrap {
-    padding: 5rem 0;
-    width: 100%;
-    background-color: #f2f1f1;
-  }
-
-  .contact_element:not(.contact_element:first-of-type) {
-    border-left: 2px solid #DFDDDD;
-  }
-}
-
 /* sp全般 */
 @media screen and (max-width: 600px) {
 
@@ -997,6 +938,71 @@ _:future,
   .sub_firstview,
   .footer_wrap {
     background-attachment: inherit;
+  }
+}
+
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {
+  .header_pc {
+    display: none;
+  }
+
+  .header_sp {
+    display: flex;
+    height: 13vh;
+  }
+
+  .header_sp_menu {
+    display: block;
+  }
+
+  .content_title {
+    font-size: 2.4rem;
+  }
+
+  .line_qr_fix_wrap {
+    display: none;
+  }
+
+  .sub_firstview {
+    height: 75vh;
+    margin-top: 13vh;
+  }
+
+  .sub_firstview,
+  .footer_wrap {
+    background-attachment: inherit;
+  }
+
+  .sub_firstview h3 {
+    font-size: 2rem;
+  }
+
+  .sp_menu_inner {
+    height: 80vh;
+  }
+
+  .contact_title,
+  .contact_inner h5,
+  .contact_element a {
+    color: #333333;
+    font-weight: 700;
+  }
+
+  .contact_wrap {
+    padding: 5rem 0;
+    width: 100%;
+    background-color: #f2f1f1;
+  }
+
+  .contact_element:not(.contact_element:first-of-type) {
+    border-left: 2px solid #DFDDDD;
+  }
+
+  .sub_firstview h3 {
+    width: 20%;
+    height: 90%;
+    font-size: 1.6rem;
   }
 }
 
