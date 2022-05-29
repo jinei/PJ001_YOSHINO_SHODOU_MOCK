@@ -147,6 +147,54 @@ td .warning_note {
   margin-left: .25rem;
 }
 
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {
+
+  .lesson_title {
+    width: 40%;
+    font-size: 2rem;
+  }
+
+  .lesson_caption,
+  .lesson_caption a {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  th,
+  td {
+    width: 25rem;
+    font-size: 1.2rem;
+  }
+
+  .warning_note {
+    font-weight: 900;
+    font-size: 1rem;
+  }
+
+  .warning_note.small {
+    width: 80%;
+  }
+
+  .warning_note:first-of-type {
+    margin: 1rem auto 0 auto;
+  }
+
+  .option_title {
+    font-weight: 900;
+  }
+
+  .guide_button_wrap {
+    width: 65%;
+  }
+
+  .lesson_demo {
+    padding: 3rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+
 /* sp全般 */
 @media screen and (max-width: 600px) {
 
