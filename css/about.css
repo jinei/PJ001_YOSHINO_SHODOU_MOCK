@@ -77,18 +77,23 @@
 
 .teacher_wrap {
   margin-top: 15rem;
+  padding: 10rem;
+  width: 100%;
+  background-color: #b2c6b2;
+  color: #ffffff;
 }
 
 .teacher_wrap .content_title,
 .teacher_wrap .content_sub_title {
   text-align: center;
+  color: #ffffff;
 }
 
 .teacher_details_wrap {
-  margin-top: 10rem;
+  margin: 10rem auto 0 auto;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
 }
 
 .teacher_details {
@@ -115,7 +120,6 @@
   font-size: 1.4rem;
   line-height: 2rem;
   margin-top: 2rem;
-  opacity: .5;
 }
 
 .teacher_details p {
@@ -148,16 +152,15 @@
   object-fit: cover;
 }
 
-.teacher_wrap .common_link_wrap {
-  margin: 15rem auto 15rem auto;
+.common_link_wrap {
+  margin: 10rem auto 15rem auto;
 }
 
-.teacher_wrap .common_link_wrap .common_link {
-  padding-left: 4rem;
-}
+.common_link_wrap .common_link {}
 
 /* タブレット（全般） */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
+
   .greeting_wrap {
     height: 640px;
   }
@@ -172,12 +175,17 @@
     margin-right: 5%;
   }
 
+  .teacher_wrap {
+    padding: 10rem 0;
+  }
+
   .teacher_details p {
     font-size: 1.6rem;
   }
 
   .teacher_details_wrap {
     align-items: center;
+    width: 90%;
   }
 
   .teacher_details_wrap picture {
@@ -211,7 +219,7 @@
     font-size: 1.2rem;
   }
 
-  .teacher_wrap .common_link_wrap .common_link {
+  .common_link_wrap .common_link {
     text-align: center;
     padding-left: inherit;
   }
@@ -228,6 +236,11 @@
 
 /* sp全般 */
 @media screen and (max-width: 600px) {
+
+  .teacher_wrap {
+    padding: 5rem 0;
+    margin-top: inherit;
+  }
 
   .greeting_wrap {
     flex-direction: column;
@@ -294,6 +307,9 @@
 
   .teacher_details_wrap img {
     margin-top: 3rem;
+    max-height: 50vh;
+    object-position: 0% 0%;
+    border-radius: 50%;
   }
 
   .teacher_details h5 {
@@ -321,13 +337,14 @@
   .teacher_details ul li {
     font-size: 1rem;
     line-height: 2rem;
+    font-weight: 700;
   }
 
   .teacher_details ul li::before {
     margin-right: .5rem;
   }
 
-  .teacher_wrap .common_link_wrap {
+  .common_link_wrap {
     margin: 8rem auto 8rem auto;
   }
 
@@ -337,16 +354,16 @@
     font-weight: 700;
   }
 
-  .teacher_wrap .common_link_wrap .common_link {
+  .common_link_wrap .common_link {
     padding-left: inherit;
     text-align: center;
   }
 
-  .teacher_wrap .common_link_wrap .common_link::before {
+  .common_link_wrap .common_link::before {
     left: 8%;
   }
 
-  .teacher_wrap .common_link_wrap .common_link::after {
+  .common_link_wrap .common_link::after {
     right: 7%;
   }
 }
