@@ -55,7 +55,11 @@
 }
 
 /* タブレット（全般） */
-@media screen and (min-width: 568px) and (max-width: 1024px) {}
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+  .content_wrap {
+    width: 85%;
+  }
+}
 
 /* sp（横向き） */
 @media screen and (max-width: 926px) and (orientation: landscape) {
