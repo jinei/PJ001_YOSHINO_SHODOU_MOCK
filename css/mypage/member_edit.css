@@ -58,7 +58,15 @@
 @media screen and (min-width: 568px) and (max-width: 1024px) {}
 
 /* sp（横向き） */
-@media screen and (max-width: 926px) and (orientation: landscape) {}
+@media screen and (max-width: 926px) and (orientation: landscape) {
+  .content_wrap {
+    width: 95%;
+  }
+
+  .member_edit_form_inner {
+    width: 80%;
+  }
+}
 
 /* sp全般 */
 @media screen and (max-width: 567px) {
@@ -86,4 +94,8 @@
 }
 
 /* sp（iPhone SE） */
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+  .member_edit_form_inner {
+    width: 90%;
+  }
+}

@@ -88,6 +88,11 @@
 
 /* sp全般 */
 @media screen and (max-width: 567px) {
+
+  .account_form_head img {
+    width: 60%;
+  }
+
   .account_form_wrap {
     top: 15vh;
     width: 90%;
@@ -103,10 +108,22 @@
     font-weight: 700;
   }
 
+  .account_form_input_wrap input {
+    height: 3.6rem;
+  }
+
   .account_btn_wrap {
     margin-top: 2rem;
   }
 }
 
 /* sp（iPhone SE） */
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+  .account_form_input_wrap {
+    margin-top: 2rem;
+  }
+
+  .reissue_link {
+    margin-top: 3rem;
+  }
+}

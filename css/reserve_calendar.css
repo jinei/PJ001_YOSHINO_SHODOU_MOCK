@@ -143,4 +143,8 @@ td.reserve_symbol.not_available p {
 }
 
 /* sp（iPhone SE） */
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+  .reserve_head {
+    margin-top: 3.5rem;
+  }
+}

@@ -162,4 +162,12 @@ td .cancel_date p {
 }
 
 /* sp（iPhone SE） */
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+
+  th,
+  td,
+  td a {
+    font-size: 1rem;
+  }
+
+}
