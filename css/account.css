@@ -81,13 +81,13 @@
 }
 
 /* タブレット（全般） */
-@media screen and (min-width: 600px) and (max-width: 1024px) {}
+@media screen and (min-width: 568px) and (max-width: 1024px) {}
 
 /* sp（横向き） */
 @media screen and (max-width: 926px) and (orientation: landscape) {}
 
 /* sp全般 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 567px) {
   .account_form_wrap {
     top: 15vh;
     width: 90%;

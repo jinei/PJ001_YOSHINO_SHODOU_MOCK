@@ -148,7 +148,7 @@ td .warning_note {
 }
 
 /* タブレット（全般） */
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 568px) and (max-width: 1024px) {
   .lesson_title {
     width: 40%;
   }
@@ -211,7 +211,7 @@ td .warning_note {
 }
 
 /* sp全般 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 567px) {
 
   table {
     margin: 3rem auto 0 auto;
@@ -281,7 +281,7 @@ td .warning_note {
 }
 
 /* sp（iPhone SE） */
-@media screen and (max-width: 375px) {
+@media screen and (width: 320px) {
 
   .lesson_title {
     width: 80%;

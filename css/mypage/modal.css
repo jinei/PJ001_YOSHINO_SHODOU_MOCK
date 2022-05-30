@@ -62,7 +62,7 @@
 }
 
 /* sp全般 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 567px) {
   .modal {
     width: 100%;
   }

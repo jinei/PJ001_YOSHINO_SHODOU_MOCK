@@ -418,7 +418,7 @@
 }
 
 /* タブレット（全般） */
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 568px) and (max-width: 1024px) {
   .top_header_wrap {
     width: 95%;
   }
@@ -490,94 +490,8 @@
   }
 }
 
-/* sp（横向き） */
-@media screen and (max-width: 926px) and (orientation: landscape) {
-  .top_header_wrap {
-    display: none;
-  }
-
-  .slider_wrap {
-    margin-top: 13vh;
-  }
-
-  .slider_caption_img {
-    width: 12vw;
-    bottom: 2rem;
-    right: 1rem;
-  }
-
-  .slider_wrap,
-  .slider,
-  .slider img {
-    height: 87vh;
-  }
-
-  .about_content {
-    font-size: 1.6rem;
-  }
-
-  .feature_title,
-  .feature_sub_title {
-    float: inherit;
-    -ms-writing-mode: inherit;
-    writing-mode: inherit;
-    text-align: center;
-    transform: inherit;
-  }
-
-  .feature_sub_title,
-  .lesson_sub_title {
-    margin-top: .5rem;
-  }
-
-  .feature_elements h5 {
-    font-size: 1.6rem;
-  }
-
-  .feature_elements p {
-    font-size: 1.2rem;
-    margin-top: 2rem;
-  }
-
-  .feature_elements_img img {
-    width: 80%;
-    height: 22.5rem;
-    filter: drop-shadow(-120px 20px 0px #EEEEEE);
-  }
-
-  .lesson_details_wrap h5 {
-    font-size: 1.6rem;
-  }
-
-  .lesson_details_wrap li,
-  .lesson_details_wrap p {
-    font-size: 1.2rem;
-  }
-
-  .lesson_card {
-    padding: 0 0 2.5rem 0;
-    width: 23%;
-    height: inherit;
-  }
-
-  .lesson_card h6 {
-    width: 80%;
-    padding: .5rem 0;
-    font-size: 1.2rem;
-  }
-
-  .lesson_card p {
-    font-size: 1rem;
-  }
-
-  .youtube_wrap {
-    width: 60%;
-  }
-
-}
-
 /* sp全般 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 567px) {
   .top_header_wrap {
     display: none;
   }
@@ -800,9 +714,108 @@
   }
 }
 
-/* sp（iPhone SE） */
-@media screen and (max-width: 375px) {
+/* sp（横向き） */
+@media screen and (max-width: 926px) and (orientation: landscape) {
+  .top_header_wrap {
+    display: none;
+  }
+
+  .slider_wrap {
+    margin-top: 13vh;
+  }
+
+  .slider_caption_img {
+    width: 12vw;
+    bottom: 2rem;
+    right: 1rem;
+  }
+
+  .slider_wrap,
+  .slider,
+  .slider img {
+    height: 87vh;
+  }
+
+  .about_content {
+    font-size: 1.6rem;
+  }
+
+  .feature_title,
+  .feature_sub_title {
+    float: inherit;
+    -ms-writing-mode: inherit;
+    writing-mode: inherit;
+    text-align: center;
+    transform: inherit;
+  }
+
+  .feature_sub_title,
+  .lesson_sub_title {
+    margin-top: .5rem;
+  }
+
+  .feature_elements h5 {
+    font-size: 1.6rem;
+  }
+
+  .feature_elements p {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .feature_elements_img img {
+    width: 80%;
+    height: 22.5rem;
+    filter: drop-shadow(-120px 20px 0px #EEEEEE);
+  }
+
+  .lesson_details_wrap h5 {
+    font-size: 1.6rem;
+  }
+
+  .lesson_details_wrap li,
+  .lesson_details_wrap p {
+    font-size: 1.2rem;
+  }
+
+  .lesson_card {
+    padding: 0 0 2.5rem 0;
+    width: 23%;
+    height: inherit;
+  }
+
   .lesson_card h6 {
-    font-size: 1.8rem;
+    width: 80%;
+    padding: .5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .lesson_card p {
+    font-size: 1rem;
+  }
+
+  .youtube_wrap {
+    width: 60%;
+  }
+
+}
+
+/* sp（iPhone SE） */
+@media screen and (max-width: 320px) {
+
+  .feature_elements h5 {
+    font-size: 1.9rem;
+  }
+
+  .lesson_wrap {
+    margin-top: 15rem;
+  }
+
+  .lesson_card h6 {
+    font-size: 1.6rem;
+  }
+
+  .lesson_card_wrap {
+    width: 80%;
   }
 }

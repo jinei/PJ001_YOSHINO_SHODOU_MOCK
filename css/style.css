@@ -767,7 +767,7 @@ _:future,
 }
 
 /* タブレット（全般） */
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 568px) and (max-width: 1024px) {
   .header_box {
     width: 95%;
     height: 104px;
@@ -805,7 +805,7 @@ _:future,
 }
 
 /* sp全般 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 567px) {
 
   body {
     background-color: #FCFCFC;
@@ -1007,4 +1007,21 @@ _:future,
 }
 
 /* sp（iPhone SE） */
-@media screen and (width: 320px) {}
+@media screen and (max-width: 320px) {
+  .content_wrap {
+    width: 90%;
+  }
+
+  .accrss_wrap {
+    width: 90%;
+  }
+
+  .access_details h6 {
+    font-size: 1.8rem;
+  }
+
+  .access_details_elements p {
+    font-size: 1.4rem;
+  }
+
+}

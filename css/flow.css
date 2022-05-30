@@ -94,7 +94,7 @@
 }
 
 /* タブレット（全般） */
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 568px) and (max-width: 1024px) {
 
   .lesson_type_button_wrap,
   .lesson_flow_wrap {
@@ -147,7 +147,7 @@
 }
 
 /* sp全般 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 567px) {
   .guide_content {
     width: 90%;
     margin: 5rem auto 0 auto;
@@ -198,7 +198,7 @@
 }
 
 /* sp（iPhone SE） */
-@media screen and (max-width: 375px) {
+@media screen and (width: 320px) {
 
   .guide_content {
     font-size: 1.2rem;

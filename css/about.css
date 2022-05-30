@@ -159,7 +159,7 @@
 .common_link_wrap .common_link {}
 
 /* タブレット（全般） */
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 568px) and (max-width: 1024px) {
 
   .greeting_wrap {
     height: 640px;
@@ -277,7 +277,7 @@
 
 
 /* sp全般 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 567px) {
 
   .teacher_wrap {
     padding: 5rem 0;
@@ -409,7 +409,7 @@
 }
 
 /* sp（iPhone SE） */
-@media screen and (max-width: 375px) {
+@media screen and (width: 320px) {
 
   .teacher_details_wrap picture {
     width: 20rem;

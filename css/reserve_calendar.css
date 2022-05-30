@@ -97,7 +97,7 @@ td.reserve_symbol.not_available p {
 }
 
 /* タブレット（全般） */
-@media screen and (min-width: 600px) and (max-width: 1024px) {
+@media screen and (min-width: 568px) and (max-width: 1024px) {
   .content_wrap {
     width: 95%;
   }
@@ -107,7 +107,7 @@ td.reserve_symbol.not_available p {
 @media screen and (max-width: 926px) and (orientation: landscape) {}
 
 /* sp全般 */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 567px) {
   .content_wrap {
     width: 97.5%;
   }
