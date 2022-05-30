@@ -231,6 +231,10 @@ body {
     width: 100%;
     padding-top: 15rem;
   }
+
+  .success_alert {
+    width: 80%;
+  }
 }
 
 /* sp全般 */
