@@ -1024,4 +1024,7 @@ _:future,
     font-size: 1.4rem;
   }
 
+  .header_sp_menu_btn {
+    top: 0.25rem;
+  }
 }

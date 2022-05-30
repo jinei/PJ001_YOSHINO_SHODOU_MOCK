@@ -220,6 +220,7 @@ td .warning_note {
   th,
   td {
     width: 30%;
+    height: auto;
     font-size: 1.2rem;
     padding: 1rem 0;
   }
@@ -296,7 +297,6 @@ td .warning_note {
   th,
   td {
     font-size: 1rem;
-    padding: .75rem 0;
   }
 
   .warning_note {
