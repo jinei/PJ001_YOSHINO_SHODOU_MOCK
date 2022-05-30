@@ -687,6 +687,7 @@
   }
 
   .lesson_card h6 {
+    width: 70%;
     margin: 2rem auto 1.4rem auto;
     padding: 1.4rem 0;
     font-size: 2rem;
