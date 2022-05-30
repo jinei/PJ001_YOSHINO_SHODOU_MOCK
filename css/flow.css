@@ -198,7 +198,7 @@
 }
 
 /* sp（iPhone SE） */
-@media screen and (width: 320px) {
+@media screen and (max-width: 320px) {
 
   .guide_content {
     font-size: 1.2rem;

@@ -281,7 +281,7 @@ td .warning_note {
 }
 
 /* sp（iPhone SE） */
-@media screen and (width: 320px) {
+@media screen and (max-width: 320px) {
 
   .lesson_title {
     width: 80%;
