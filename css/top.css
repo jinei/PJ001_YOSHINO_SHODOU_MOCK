@@ -778,9 +778,14 @@
     font-size: 1.2rem;
   }
 
+  .lesson_card_wrap {
+    margin: 0rem auto;
+    width: 70%;
+  }
+
   .lesson_card {
     padding: 0 0 2.5rem 0;
-    width: 23%;
+    width: 45%;
     height: inherit;
   }
 
@@ -790,7 +795,8 @@
     font-size: 1.2rem;
   }
 
-  .lesson_card p {
+  .lesson_card p,
+  .lesson_card small {
     font-size: 1rem;
   }
 
@@ -817,5 +823,46 @@
 
   .lesson_card_wrap {
     width: 80%;
+  }
+}
+
+/* sp（iPhone SE）（横向き） */
+@media screen and (max-width: 568px) and (orientation: landscape) {
+  .online_lesson_wrap {
+    height: 22.5rem;
+  }
+
+  .online_lesson_details_inner h4 {
+    font-size: 1.6rem;
+  }
+
+  .online_lesson_details_inner h5 {
+    font-size: 1.2rem;
+  }
+
+  .online_lesson_details_inner p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .online_lesson_wrap .common_link_wrap {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+
+  .online_lesson_wrap .common_link_wrap .common_link {
+    font-size: 1rem;
+  }
+
+  .feature_elements_img img {
+    width: 25.5rem;
+  }
+
+  .lesson_card h6 {
+    font-size: 1rem;
+  }
+
+  .lesson_card p {
+    font-size: .5rem;
   }
 }
