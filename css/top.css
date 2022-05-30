@@ -536,7 +536,7 @@
   .online_lesson_img_wrap,
   .online_lesson_details {
     width: 100%;
-    height: 50%;
+    height: 45%;
   }
 
   .online_lesson_details_inner h4 {
@@ -809,6 +809,11 @@
 
 /* sp（iPhone SE） */
 @media screen and (max-width: 320px) {
+
+  .online_lesson_img_wrap,
+  .online_lesson_details {
+    height: 50%;
+  }
 
   .feature_elements h5 {
     font-size: 1.9rem;
