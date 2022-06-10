@@ -122,10 +122,17 @@
   width: 100%;
 }
 
-.slider_caption_img {
+.online_promotion_img {
   position: absolute;
   right: 15rem;
   bottom: 7.5rem;
+}
+
+.akeno_promotion_img {
+  position: absolute;
+  left: 10rem;
+  bottom: 5rem;
+  width: 30rem;
 }
 
 .about_content {
@@ -441,7 +448,12 @@
     height: 18vw;
   }
 
-  .slider_caption_img {
+  .akeno_promotion_img {
+    width: 30%;
+    left: 2.5rem;
+  }
+
+  .online_promotion_img {
     right: 5rem;
   }
 
@@ -510,7 +522,13 @@
     width: 50vw;
   }
 
-  .slider_caption_img {
+  .akeno_promotion_img {
+    left: 1rem;
+    bottom: 1rem;
+    width: 40vw;
+  }
+
+  .online_promotion_img {
     width: 25vw;
     bottom: 2rem;
     right: 1rem;
@@ -725,7 +743,12 @@
     margin-top: 13vh;
   }
 
-  .slider_caption_img {
+  .akeno_promotion_img {
+    width: 22.5vw;
+    bottom: 1rem;
+  }
+
+  .online_promotion_img {
     width: 12vw;
     bottom: 2rem;
     right: 1rem;
