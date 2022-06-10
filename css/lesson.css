@@ -2,6 +2,32 @@
   background-image: url('../img/fv_lesson.jpg');
 }
 
+.lesson_type_wrap {
+  text-align: center;
+  font-family: 'Shippori Antique B1',
+    sans-serif;
+}
+
+.lesson_type_wrap p {
+  font-size: 1.6rem;
+}
+
+.lesson_type_icon_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem auto 0 auto;
+  width: 40%;
+}
+
+.lesson_type_icon_wrap img {
+  width: 27.5%;
+}
+
+.admin_flee {
+  margin-top: 3rem;
+  color: #FB2B2B;
+}
+
 .lesson_title {
   margin: auto;
   padding: 1.6rem 0;
@@ -212,6 +238,14 @@ td .warning_note {
 
 /* sp全般 */
 @media screen and (max-width: 567px) {
+
+  .lesson_type_icon_wrap {
+    width: 70%;
+  }
+
+  .lesson_type_wrap p {
+    font-size: 1.4rem;
+  }
 
   table {
     margin: 3rem auto 0 auto;
