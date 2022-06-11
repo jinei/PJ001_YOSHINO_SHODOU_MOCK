@@ -1,3 +1,10 @@
+.text-red-600,
+.text-red-600 * {
+  margin-top: .5rem;
+  font-size: 1.4rem;
+  color: #FB2B2B;
+}
+
 .account_form_wrap {
   position: absolute;
   top: 25vh;
@@ -41,6 +48,8 @@
   border-radius: 1px;
   padding-left: .5rem;
   font-size: 1.6rem;
+  font-family: 'Noto Sans JP',
+    sans-serif;
 }
 
 .account_form_input_wrap input:focus {
