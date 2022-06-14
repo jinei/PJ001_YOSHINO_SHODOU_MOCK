@@ -98,9 +98,6 @@ td .cancel_date p {
 }
 
 .pagination li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
   background-color: #ffffff;
@@ -112,6 +109,14 @@ td .cancel_date p {
 .pagination li a,
 .pagination li i {
   font-size: 1.6rem;
+}
+
+.pagination li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%
 }
 
 .pagination li.active,
