@@ -16,9 +16,10 @@
 }
 
 .modal_header,
-.modal_body {
+.modal_body p {
   font-weight: 500;
   font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 .modal_header {
